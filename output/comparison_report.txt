@@ -1,0 +1,17 @@
+BAO CAO SO SANH MATLAB GOLDEN MODEL VS MODELSIM RTL
+==========================================================
+File MATLAB : fir_expected_main_direct.txt
+File ModelSim: fir_out_main_direct.txt
+So mau      : 1002
+So mau trung khop: 1002
+So mau khac nhau : 0
+Tien le trung khop: 100.000000%
+Max Error   : 0
+MAE         : 0.00000000
+RMSE        : 0.00000000
+
+KET LUAN:
+TRUNG KHOP HOAN TOAN
+
+MOT SO MAU KHAC NHAU (toi da 20 mau):
+Khong co mau nao khac nhau.

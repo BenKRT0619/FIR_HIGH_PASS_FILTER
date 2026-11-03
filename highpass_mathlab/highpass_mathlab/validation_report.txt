@@ -1,0 +1,20 @@
+32-tap FIR high-pass | DSP window method vs spectrum conversion
+Fs = 2000 Hz
+LP reference cutoff = 400 Hz = 0.2 Fs (Verilog)
+HP cutoff (both flows) = 600 Hz = Fs/2 - LP cutoff
+Test tones: Fstop = 200 Hz; Fpass = 800 Hz
+Samples = 1000, taps = 32, window = Hamming, Q = signed Q15
+LP reference Q15 sum = 32112 (0.97998047)
+Direct coefficient max abs = 12233 LSB
+Converted coefficient max abs = 11995 LSB
+Max coefficient difference = 238 LSB
+Mean abs coefficient difference = 30.8125 LSB
+Input Q15 range = [-24931, 24931]
+Input peak absolute value = 0.76083374
+RTL-equivalent MAC: saturated outputs (direct, converted) = (0, 0)
+RTL-equivalent output peak abs (direct, converted) = (0.40307617, 0.39526367)
+|H(200 Hz)| [dB]: direct=-59.8331; converted=-60.5411
+|H(600 Hz)| [dB]: direct=-6.0077; converted=-6.1796
+|H(800 Hz)| [dB]: direct=0.0020; converted=-0.1681
+|H(1000 Hz)| [dB]: direct=-0.0048; converted=-0.1757
+All 3 hex files verified: one uppercase 4-digit two's-complement word per line.

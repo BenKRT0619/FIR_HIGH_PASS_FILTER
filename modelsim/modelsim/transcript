@@ -1,0 +1,33 @@
+do run.do
+# main
+# fir_input.hex
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:10:42 on Nov 03,2026
+# vlog -reportprogress 300 fir32_highpass_direct.v fir32_highpass_converted.v tb_fir32_dual_compare.v 
+# -- Compiling module fir32_highpass_direct
+# -- Compiling module fir32_highpass_converted
+# -- Compiling module tb_fir32_dual_compare
+# 
+# Top level modules:
+# 	tb_fir32_dual_compare
+# End time: 20:10:42 on Nov 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_fir32_dual_compare "+IN=fir_input.hex" "+EXP_D=fir_expected_main_direct.hex" "+EXP_C=fir_expected_main_converted.hex" "+OUT_D=fir_out_main_direct.txt" "+OUT_C=fir_out_main_converted.txt" 
+# Start time: 20:10:42 on Nov 03,2026
+# Loading work.tb_fir32_dual_compare
+# Loading work.fir32_highpass_direct
+# Loading work.fir32_highpass_converted
+# ------------------------------------------------------------
+#  Captured lines : 1002 (expected 1002)
+#  Direct    : mismatches = 0 | sat +32767 = 0, -32768 = 0
+#  Converted : mismatches = 0 | sat +32767 = 0, -32768 = 0
+#  *** PASS: RTL khop 100% voi golden model (bit-exact) ***
+# ------------------------------------------------------------
+# ** Note: $stop    : tb_fir32_dual_compare.v(157)
+#    Time: 10046 ns  Iteration: 0  Instance: /tb_fir32_dual_compare
+# Break in Module tb_fir32_dual_compare at tb_fir32_dual_compare.v line 157
+# 0 ps
+# 10548300 ps
+
+# End time: 20:12:12 on Nov 03,2026, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 2
