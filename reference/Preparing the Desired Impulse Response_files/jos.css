@@ -1,0 +1,185 @@
+/*
+<!-- old API gone in HTML5 -->
+<!-- <BODY background="greybackground.gif"> -->
+<!-- <BODY bgcolor="A0A0A0"> -->
+<!-- <BODY bgcolor="000000"> -->
+*/
+
+:root {
+    color-scheme: light dark;
+    --title-color: #000040;
+    --background-color: #FFFFFF;
+    --text-color: #000;
+    --border-color: black;
+    --link-color: #000088;
+    --visited-color: gray;
+    --active-color: blue;
+    --hover-color: red;
+    --rule-color: blue;
+    --image-inversion: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --title-color: #FFFFBF;
+        --background-color: #111122; /* need full black to match images */
+        --text-color: #ffffff;
+        --link-color: #CCAAEE;
+        --visited-color: gray;
+        --active-color: pink;
+        --hover-color: red;
+        --rule-color: lightgreen;
+        --image-inversion: 1;
+    }
+}
+
+html[data-theme="light"] {
+    color-scheme: light;
+    --title-color: #000040;
+    --background-color: #FFFFFF;
+    --text-color: #000;
+    --border-color: black;
+    --link-color: #000088;
+    --visited-color: gray;
+    --active-color: blue;
+    --hover-color: red;
+    --rule-color: blue;
+    --image-inversion: 0;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+    --title-color: #FFFFBF;
+    --background-color: #111122;
+    --text-color: #ffffff;
+    --link-color: #CCAAEE;
+    --visited-color: gray;
+    --active-color: pink;
+    --hover-color: red;
+    --rule-color: lightgreen;
+    --image-inversion: 1;
+}
+
+img {
+    -webkit-filter: invert(var(--image-inversion));
+    filter: invert(var(--image-inversion));
+}
+
+img.no-invert,
+.no-invert img {
+    -webkit-filter: none !important;
+    filter: none !important;
+}
+
+img.rounded-corners {
+    border-radius: 40%;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size:12pt;
+    font-family:"Times New Roman", serif;
+}
+/* font-family:"Lucida Grande", sans-serif; */
+/* more sans-serif: Verdana,Arial */
+
+.theme-toggle {
+    background: var(--background-color);
+    border: 1px solid var(--rule-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font: inherit;
+    padding: 0.2em 0.45em;
+    position: fixed;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 10;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus {
+    color: var(--hover-color);
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--rule-color);
+    outline-offset: 1px;
+}
+
+.theme-toggle:has(.sun) {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+/* When the course sidebar is mounted, slide the toggle left of it so it
+   isn't hidden behind the (z-index:1000) panel. The CSS variables
+   --course-sidebar-width / --course-sidebar-collapsed are declared in
+   course.css; we fall back to 0px when course.css isn't loaded. */
+body.course-active .theme-toggle {
+    right: calc(var(--course-sidebar-width, 0px) + 0.5em);
+}
+
+body.course-active.sidebar-collapsed .theme-toggle {
+    right: calc(var(--course-sidebar-collapsed, 0px) + 0.5em);
+}
+
+.theme-toggle .sun {
+    color: #f5b800;
+}
+
+.theme-toggle .moon {
+    color: #1e3a8a;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px currentColor;
+}
+
+tt { font-size:12pt; }
+pre { font-size:12pt; }
+
+.textit { font-style: italic; }
+.textbf { font-weight: bold; }
+
+IMG.inline {vertical-align:middle;}
+/* IMG.inline {border:solid blue 1px;} */ /* testing 1 2 */ 
+
+A:link {text-decoration: none; color:var(--link-color)}
+A:visited {text-decoration: none; color:var(--visited-color)}
+A:active {text-decoration: none; color:var(--active-color)}
+A:hover {text-decoration: underline; color:var(--hover-color)}
+
+/* horizontal rule - to improve using an image, see 
+   http://www.sovavsiti.cz/css/hr.html
+ */
+hr {
+    border: 1px outset var(--rule-color); /* was 2px */
+    width: 100%;
+    height: 0px; /* was 4px */
+    margin: 10px auto 0 0;
+    text-align: left;
+    }   
+
+title {color: var(--title-color)}
+
+/* http://notjustahatrack.com/posts/styling-the-sup-tag/ */
+suphide {
+    height: 0;
+    line-height: 1;
+    position: relative;
+    top: -0.6em;
+    vertical-align: baseline !important;
+    vertical-align: bottom;
+}
+
+/* Compensate somewhat for math images with large blank space beneath
+   (anything with descenders such as \rho) */
+p { line-height: 1.5; }
+mjx-container { line-height: normal; }
+caption { line-height: 1.5; }
+
+/* H0 { background-color: black; } */
+/* div { margin: 0; padding: 0; } */

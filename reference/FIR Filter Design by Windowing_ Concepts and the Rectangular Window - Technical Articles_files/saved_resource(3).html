@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0128)https://www.allaboutcircuits.com/technical-articles/finite-impulse-response-filter-design-by-windowing-part-i-concepts-and-rect/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>var inDapIF=true,inGptIF=true;</script><style></style></head><body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><div class="GoogleActiveViewInnerContainer" id="avic_CKSmx_3Y7ZcDFbqEOAgdtUAvww" style="left:0px;top:0px;width:100%;height:100%;position:fixed;pointer-events:none;z-index:-9999;"></div><div style="display:inline"><script src="./jquery.min.js.download"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        if( /iOS|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $("<a target=\"_blank\" href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssyUZacVFsCqpIYjT5ezmcdFjkB5QY57d4wlLKOiADxzHpUENGt3dPjbK9WRIBhdd05e4xCeBsGxE30Vk1VFef0CdCLJI8fn9r5m-yGgRlBZeHrwZKcwSUI6jp58dvPvx0AX1FMIXu16Ucb2UxhRzYR5t2TzBFSnhH3h6dYHxRQqOSHnM4JnQvt6h8-Dc_HmrQ9D8agx-tA6t8shln-Vfhc1xL_VK1GZAyxIG0OcsUL6p24BklOl9AvKFzbD6arydZZ18meOw-tp7uhAfe2BrAiJia2hSDvTGmdUVUF590rt7avt1rb7kwmQcWZg-Y0HlX9z3TpO6E9jGc_BY-QS7nQZgZX_jDFKSrHUh5A9yeotRZP7CXk10JriymhJu60_6PXbHdMfu76a3dRIn1jPSnboDgv7GHReO3b&sai=AMfl-YTVoiRkj0s5_55a6eb7yQPZazFdorVCWXKXvTODIwFzuwMneBP-wXHg_IQmmdzyZPydO9YKO_LEc9xhV21EvVdkzkLafcxBgVikjQnoYDVd2jQGihwXEpcVJIil3a-dciL2HM2U9vk2-Sr1Doo9FHKL1Y9w2acv-XD_-Pg5HC8mzbQ02QyLuqcDSdkWYe6C2ZaXUQKkZbzDIgmd0y5vCQn3FabpJjdEPkeT-g79fc2feqQMNQr7LIr6ZH1EGMz5qqJ1F1uTRkGVwk0s9_LtVc42ZdPAgeXZywAbsVQJyc-RpzLNPbLF8ZXhWnj10IzhWPLKhvCHkhVpyeF9aYqvIZgp9rDY0m4zhMCmGNaa9vAxyR2D5x7bzE3diQDP2xI&sig=Cg0ArKJSzNbgukXAr-yxEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://www.microchip.com/en-us/products/clock-and-timing/components/clock-data-distribution/buffers/low-voltage-buffers?utm_source=allaboutcircuits&utm_medium=DisplayAd&utm_content=TCG_1420x640&utm_campaign=AmberCampaign\" id=\"wallpaper-mobile\" class=\"fixed block w-full bottom-0 z-50 h-50px m-0 p-0 bg-aac-grey-lightest\"><img src=\"\" class=\"mx-auto\" \></a>") .insertBefore($(window.parent.document).find("main, .p-body"));      
+
+        } else {
+           
+            $("<a target=\"_blank\" href=\"https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjssyUZacVFsCqpIYjT5ezmcdFjkB5QY57d4wlLKOiADxzHpUENGt3dPjbK9WRIBhdd05e4xCeBsGxE30Vk1VFef0CdCLJI8fn9r5m-yGgRlBZeHrwZKcwSUI6jp58dvPvx0AX1FMIXu16Ucb2UxhRzYR5t2TzBFSnhH3h6dYHxRQqOSHnM4JnQvt6h8-Dc_HmrQ9D8agx-tA6t8shln-Vfhc1xL_VK1GZAyxIG0OcsUL6p24BklOl9AvKFzbD6arydZZ18meOw-tp7uhAfe2BrAiJia2hSDvTGmdUVUF590rt7avt1rb7kwmQcWZg-Y0HlX9z3TpO6E9jGc_BY-QS7nQZgZX_jDFKSrHUh5A9yeotRZP7CXk10JriymhJu60_6PXbHdMfu76a3dRIn1jPSnboDgv7GHReO3b&sai=AMfl-YTVoiRkj0s5_55a6eb7yQPZazFdorVCWXKXvTODIwFzuwMneBP-wXHg_IQmmdzyZPydO9YKO_LEc9xhV21EvVdkzkLafcxBgVikjQnoYDVd2jQGihwXEpcVJIil3a-dciL2HM2U9vk2-Sr1Doo9FHKL1Y9w2acv-XD_-Pg5HC8mzbQ02QyLuqcDSdkWYe6C2ZaXUQKkZbzDIgmd0y5vCQn3FabpJjdEPkeT-g79fc2feqQMNQr7LIr6ZH1EGMz5qqJ1F1uTRkGVwk0s9_LtVc42ZdPAgeXZywAbsVQJyc-RpzLNPbLF8ZXhWnj10IzhWPLKhvCHkhVpyeF9aYqvIZgp9rDY0m4zhMCmGNaa9vAxyR2D5x7bzE3diQDP2xI&sig=Cg0ArKJSzNbgukXAr-yxEAE&fbs_aeid=%5Bgw_fbsaeid%5D&urlfix=1&adurl=https://www.microchip.com/en-us/products/clock-and-timing/components/clock-data-distribution/buffers/low-voltage-buffers?utm_source=allaboutcircuits&utm_medium=DisplayAd&utm_content=TCG_1420x640&utm_campaign=AmberCampaign\" id=\"wallpaper\" class=\"absolute block z-0 w-full h-screen\" style=\"background: #f4f4f4 no-repeat top	 center url(\'https://tpc.googlesyndication.com/simgad/6942964288796498270?\')\"></a>").insertBefore($(window.parent.document).find("main, .p-body"));
+               
+        }
+    });
+</script>
+
+
+<div style="position: absolute; top: 0px; right: 0px; width: 1px; height: 1px; visibility: hidden; border: none;">
+<img src="./view" style="display:none">
+    <script type="text/javascript">
+        var trackingPixel="";
+        if ( trackingPixel.indexOf("http")==0 ) {
+            document.write('<img src="' + trackingPixel + '" height="1" width="1" style="width:1px !important;height 1px !important" />');
+        }
+
+        var SecondaryPixelImage="";
+        if ( SecondaryPixelImage.indexOf("http")==0 ) {
+            document.write('<img src="' + SecondaryPixelImage  + '" height="1" width="1" />');
+        }
+
+        var JSImpressionTagURL="";
+        if ( JSImpressionTagURL.indexOf("http")==0 ) {
+			var jsTag = document.createElement('script');
+			jsTag.setAttribute('src', JSImpressionTagURL);
+			jsTag.async = true;
+
+        	window.parent.document.getElementsByTagName('head')[0].appendChild(jsTag);
+        }
+
+    </script>
+</div>
+
+</div><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:pixelated !important;z-index:2147483647;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWCAMAAABuZ5WBAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB9SURBVCjPlZJRDoAwCEPp/S/t30bpY4kajYFRu7dW/blk961gTzbYJaKnpsRPG4tCfJ0eL33oul+dWvj1vabXziggVjAwvjW0tVoJsnwcY55xmbLQs78bB8I3ES4c8ugXvul5yVlfMPDhzzAXmDPWLs5vbrPefkFi45B5+wCkCwDpsgwUkAAAAABJRU5ErkJggg==') !important;"></div><script data-jc="103" data-jc-version="r20261103" data-jc-flags="[&quot;x%72?06104!=wu}ay&quot;]" data-jcp-base_url="https://googleads.g.doubleclick.net/pagead/interaction/?ai=Bl4sZy9HqauSUCLqJ4vEPtYG9mQyJjKTdRwAAABABINHYxic4AVj4iMG1hARgwbX6DbIBGHd3dy5hbGxhYm91dGNpcmN1aXRzLmNvbboBCWdmcF9pbWFnZcgBCdoBgAFodHRwczovL3d3dy5hbGxhYm91dGNpcmN1aXRzLmNvbS90ZWNobmljYWwtYXJ0aWNsZXMvZmluaXRlLWltcHVsc2UtcmVzcG9uc2UtZmlsdGVyLWRlc2lnbi1ieS13aW5kb3dpbmctcGFydC1pLWNvbmNlcHRzLWFuZC1yZWN0L5gCwKkHwAIC4AIA6gIYLzYyNjE2NDMzL21haW5fd2FsbHBhcGVy-AKE0h6QA_QImAOsAqgDAeAEAdIFBhCam9WPG5AGAaAGH4gHAZAHAqgHuL6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB6nrsQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfn17EC2AcA4AcD0gg3CAAQAhidATIIgICAgICAgAg6FJ_QgICAgASQwICAgKCogAKogYAYSL39wTpYu_fF_djtlwNgAdgIAoAKBZgLAYAMAaoNAlZO6g0TCNr1yP3Y7ZcDFbqEOAgdtUAvw9AVAfgWAYAXAbIZATU&amp;sigh=bdjEn6BfeiU" data-jcp-cpu_label="heavy_ad_intervention_cpu" data-jcp-net_label="heavy_ad_intervention_network">(function(){'use strict';var d=new class{constructor(a,b=!1){this.key=a;this.defaultValue=b;this.valueType="boolean"}}("45742757",!0);var f=0;function k(a,b=null){return b&&b.getAttribute("data-jc")===String(a)?b:document.querySelector(`[data-jc="${a}"]`)};function l(){m||(m=new n);var a=m.h[d.key];if(d.valueType==="proto"){try{let b=JSON.parse(a);if(Array.isArray(b))return b}catch(b){}return d.defaultValue}return typeof a===typeof d.defaultValue?a:d.defaultValue}var p=class{constructor(){this.h={}}};var n=class extends p{constructor(){super();var a=k(f,document.currentScript);a=a&&a.getAttribute("data-jc-flags")||"";try{let b=JSON.parse(a)[0];a="";for(let c=0;c<b.length;c++)a+=String.fromCharCode(b.charCodeAt(c)^"\u0003\u0007\u0003\u0007\b\u0004\u0004\u0006\u0005\u0003".charCodeAt(c%10));this.h=JSON.parse(a)}catch(b){}}},m;f=103;var r=k(103,document.currentScript);if(r==null)throw Error("JSC not found 103");var t={},u=r.attributes;for(let a=u.length-1;a>=0;a--){let b=u[a].name;b.indexOf("data-jcp-")===0&&(t[b.substring(9)]=u[a].value)} (function(a,b,c){var e=window;if(a&&b&&c&&e.ReportingObserver&&e.fetch){var q=(g,v)=>{g=g[0];g?.body?.id==="HeavyAdIntervention"&&(e.fetch(`${a}&label=${(g.body.message?.indexOf("network")||0)>0?c:b}`,{keepalive:!0,method:"get",mode:"no-cors"}),v.disconnect())},h=new e.ReportingObserver(q,{types:["intervention"],buffered:!0});h.observe();l()&&e.addEventListener("pagehide",()=>{q(h.takeRecords(),h);h.disconnect()})}})(t.base_url,t.cpu_label,t.net_label);}).call(this);</script></body></html>

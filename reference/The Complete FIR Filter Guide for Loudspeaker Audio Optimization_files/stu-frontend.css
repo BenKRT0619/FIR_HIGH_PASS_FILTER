@@ -1,0 +1,4809 @@
+.stu-item-flex,
+.stu-form-wrap .both-fields-wrap,
+.stu-popup-innerwrap .stu-popup-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stu-hidden-item {
+  display: none;
+}
+
+.stu-rounded {
+  border-radius: 68px !important;
+}
+
+.stu-edge-curve {
+  border-radius: 4px !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.stu-pos-rel {
+  position: relative;
+}
+
+.stu-z-i {
+  z-index: 9;
+}
+
+.has-pre-icon {
+  position: relative;
+}
+.has-pre-icon i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
+  color: inherit;
+  opacity: 0.48;
+}
+.has-pre-icon input[type="text"],
+.has-pre-icon input[type="email"] {
+  padding-right: 34px !important;
+  color: inherit;
+}
+
+#svg-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stu-form-submit {
+  width: 100%;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+.stu-main-outer-wrap .stu-blur-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.stu-content-locked {
+  position: relative;
+  max-height: 100%;
+  min-height: 680px;
+  /* overflow: hidden;  */
+}
+.stu-content-locked:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.94)
+  );
+  z-index: 4;
+}
+.stu-content-locked .stu-lock-content {
+  -webkit-filter: url(#svg-blur);
+  filter: url(#svg-blur);
+}
+
+.stu-unlock-label {
+  margin-bottom: 20px;
+}
+
+.stu-unlock-form-wrap {
+  padding: 0 20px 40px;
+}
+
+.stu-unlock-button {
+  margin-top: 15px;
+}
+
+.stu-form-wrap {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins";
+  width: 100%;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 0 24px;
+}
+.stu-form-wrap * {
+  box-sizing: border-box;
+}
+.stu-form-wrap img {
+  box-shadow: none !important;
+}
+.stu-form-wrap form {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+.stu-form-wrap input[type="submit"],
+.stu-form-wrap input[type="text"],
+.stu-form-wrap input[type="email"],
+.stu-form-wrap input[type="checkbox"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="url"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="tel"] {
+  margin: 0;
+  box-shadow: none;
+  text-shadow: none;
+  outline: none;
+  border: none;
+  border-radius: 0;
+}
+.stu-form-wrap .stu-icon-holder img {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+  max-width: 144px;
+  height: auto;
+}
+.stu-form-wrap h2.stu-heading-text {
+  font-family: inherit !important;
+  font-weight: 400;
+  font-size: 2.1rem;
+  margin: 0 0 20px 0;
+  line-height: 1;
+  color: inherit !important;
+}
+.stu-form-wrap h2.stu-heading-text:before,
+.stu-form-wrap h2.stu-heading-text:after {
+  display: none;
+}
+.stu-form-wrap p.stu-heading-paragraph {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+}
+.stu-form-wrap p.stu-check-box-text {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+.stu-form-wrap .stu-check-box-text {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.stu-form-wrap .stu-check-box-text label {
+  color: inherit;
+  font-weight: 300;
+  font-size: 12px;
+}
+.stu-form-wrap p.stu-note,
+.stu-form-wrap .stu-footer-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 0.8em;
+  line-height: 1.4;
+}
+.stu-form-wrap .stu-footer-text {
+  margin-top: 20px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.stu-form-wrap input[type="text"],
+.stu-form-wrap input[type="email"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="url"],
+.stu-form-with-custom-fields .stu-form-wrap input[type="tel"] {
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%;
+  line-height: 1;
+  padding: 15px 18px;
+  border: solid 1px black;
+  transition: all 0.3s ease;
+  color: inherit;
+  height: 48px;
+  box-shadow: none;
+}
+.stu-form-wrap input[type="text"]:focus,
+.stu-form-wrap input[type="email"]:focus {
+  outline: none;
+}
+.stu-form-with-custom-fields .stu-form-wrap input[type="number"]:focus,
+.stu-form-with-custom-fields .stu-form-wrap input[type="url"]:focus,
+.stu-form-with-custom-fields .stu-form-wrap input[type="tel"]:focus {
+  outline: none;
+}
+.stu-form-wrap input[type="text"].stu-underline,
+.stu-form-wrap input[type="email"].stu-underline {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.28);
+}
+.stu-form-with-custom-fields .stu-form-wrap input[type="number"].stu-underline,
+.stu-form-with-custom-fields .stu-form-wrap input[type="url"].stu-underline,
+.stu-form-with-custom-fields .stu-form-wrap input[type="tel"].stu-underline {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.28);
+}
+.stu-form-wrap ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: inherit;
+  opacity: 0.68;
+  /* Firefox */
+}
+.stu-form-wrap :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: inherit;
+  opacity: 0.68;
+}
+.stu-form-wrap ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: inherit;
+  opacity: 0.68;
+}
+.stu-form-wrap .both-fields-wrap {
+  margin-bottom: 20px;
+}
+.stu-form-wrap .stu-field-wrap {
+  flex: 1;
+}
+.stu-form-wrap .stu-btn-parent {
+  flex: 1;
+  max-width: 80%;
+}
+.stu-form-wrap .stu-check-box-text {
+  margin-bottom: 20px;
+}
+.stu-form-wrap .stu-form-submit {
+  margin-bottom: 20px;
+  border-radius: 0;
+  background-color: #ff654b;
+  color: inherit;
+  font-size: 14px !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: none;
+  width: auto;
+}
+.stu-form-wrap .stu-form-submit:hover {
+  background-color: inherit;
+  color: inherit;
+}
+.stu-form-wrap .stu-footer-text {
+  font-style: italic;
+  color: inherit;
+}
+.stu-form-wrap .stu-form-message {
+  padding: 0 20px;
+  line-height: 34px;
+  font-size: 0.9em;
+  text-align: center;
+}
+.stu-form-wrap .stu-form-message.stu-error {
+  background-color: #c45151;
+  color: white;
+  font-size: 12px;
+}
+.stu-form-wrap .stu-form-message.stu-success {
+  background-color: #74ba55;
+  color: white;
+}
+.stu-form-wrap .stu-form-submit {
+  margin-bottom: 0;
+}
+.stu-form-wrap .stu-terms-agreement {
+  width: 14px;
+  height: 13px;
+  vertical-align: middle;
+  margin-top: -3px !important;
+}
+.stu-form-wrap .button,
+.stu-form-wrap button,
+.stu-form-wrap input[type="button"],
+.stu-form-wrap input[type="reset"],
+.stu-form-wrap input[type="submit"] {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+}
+.stu-form-wrap.stu-template-1,
+.stu-form-wrap.stu-template-2,
+.stu-form-wrap.stu-template-3,
+.stu-form-wrap.stu-template-4,
+.stu-form-wrap.stu-template-5,
+.stu-form-wrap.stu-template-6,
+.stu-form-wrap.stu-template-7,
+.stu-form-wrap.stu-template-8,
+.stu-form-wrap.stu-template-9,
+.stu-form-wrap.stu-template-10,
+.stu-form-wrap.stu-template-11,
+.stu-form-wrap.stu-template-12,
+.stu-form-wrap.stu-template-13,
+.stu-form-wrap.stu-template-14,
+.stu-form-wrap.stu-template-15,
+.stu-form-wrap.stu-template-16,
+.stu-form-wrap.stu-template-17,
+.stu-form-wrap.stu-template-18,
+.stu-form-wrap.stu-template-19,
+.stu-form-wrap.stu-template-20 {
+  background-color: white;
+  text-align: center;
+  max-width: 680px;
+}
+.stu-form-wrap.stu-template-1 img,
+.stu-form-wrap.stu-template-2 img,
+.stu-form-wrap.stu-template-3 img,
+.stu-form-wrap.stu-template-4 img,
+.stu-form-wrap.stu-template-5 img,
+.stu-form-wrap.stu-template-6 img,
+.stu-form-wrap.stu-template-7 img,
+.stu-form-wrap.stu-template-8 img,
+.stu-form-wrap.stu-template-9 img,
+.stu-form-wrap.stu-template-10 img,
+.stu-form-wrap.stu-template-11 img,
+.stu-form-wrap.stu-template-12 img,
+.stu-form-wrap.stu-template-13 img,
+.stu-form-wrap.stu-template-14 img,
+.stu-form-wrap.stu-template-15 img,
+.stu-form-wrap.stu-template-16 img,
+.stu-form-wrap.stu-template-17 img,
+.stu-form-wrap.stu-template-18 img,
+.stu-form-wrap.stu-template-19 img,
+.stu-form-wrap.stu-template-20 img {
+  border: none;
+}
+.stu-form-wrap.stu-template-1 h2.stu-heading-text,
+.stu-form-wrap.stu-template-2 h2.stu-heading-text,
+.stu-form-wrap.stu-template-3 h2.stu-heading-text,
+.stu-form-wrap.stu-template-4 h2.stu-heading-text,
+.stu-form-wrap.stu-template-5 h2.stu-heading-text,
+.stu-form-wrap.stu-template-6 h2.stu-heading-text,
+.stu-form-wrap.stu-template-7 h2.stu-heading-text,
+.stu-form-wrap.stu-template-8 h2.stu-heading-text,
+.stu-form-wrap.stu-template-9 h2.stu-heading-text,
+.stu-form-wrap.stu-template-10 h2.stu-heading-text,
+.stu-form-wrap.stu-template-11 h2.stu-heading-text,
+.stu-form-wrap.stu-template-12 h2.stu-heading-text,
+.stu-form-wrap.stu-template-13 h2.stu-heading-text,
+.stu-form-wrap.stu-template-14 h2.stu-heading-text,
+.stu-form-wrap.stu-template-15 h2.stu-heading-text,
+.stu-form-wrap.stu-template-16 h2.stu-heading-text,
+.stu-form-wrap.stu-template-17 h2.stu-heading-text,
+.stu-form-wrap.stu-template-18 h2.stu-heading-text,
+.stu-form-wrap.stu-template-19 h2.stu-heading-text,
+.stu-form-wrap.stu-template-20 h2.stu-heading-text {
+  color: inherit;
+  font-weight: 600;
+}
+.stu-custom-field-wrap.stu-select-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-1 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-1 .stu-check-box-text,
+.stu-form-wrap.stu-template-2 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-2 .stu-check-box-text,
+.stu-form-wrap.stu-template-3 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-3 .stu-check-box-text,
+.stu-form-wrap.stu-template-4 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-4 .stu-check-box-text,
+.stu-form-wrap.stu-template-5 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-5 .stu-check-box-text,
+.stu-form-wrap.stu-template-6 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-6 .stu-check-box-text,
+.stu-form-wrap.stu-template-7 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-7 .stu-check-box-text,
+.stu-form-wrap.stu-template-8 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-8 .stu-check-box-text,
+.stu-form-wrap.stu-template-9 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-9 .stu-check-box-text,
+.stu-form-wrap.stu-template-10 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-10 .stu-check-box-text,
+.stu-form-wrap.stu-template-11 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-11 .stu-check-box-text,
+.stu-form-wrap.stu-template-12 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-12 .stu-check-box-text,
+.stu-form-wrap.stu-template-13 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-13 .stu-check-box-text,
+.stu-form-wrap.stu-template-14 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-14 .stu-check-box-text,
+.stu-form-wrap.stu-template-15 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-15 .stu-check-box-text,
+.stu-form-wrap.stu-template-16 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-16 .stu-check-box-text,
+.stu-form-wrap.stu-template-17 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-17 .stu-check-box-text,
+.stu-form-wrap.stu-template-18 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-18 .stu-check-box-text,
+.stu-form-wrap.stu-template-19 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-19 .stu-check-box-text,
+.stu-form-wrap.stu-template-20 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-20 .stu-check-box-text {
+  color: inherit;
+  opacity: 0.88;
+}
+.stu-form-wrap.stu-template-1 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-1 .stu-check-box-text label,
+.stu-form-wrap.stu-template-2 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-2 .stu-check-box-text label,
+.stu-form-wrap.stu-template-3 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-3 .stu-check-box-text label,
+.stu-form-wrap.stu-template-4 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-4 .stu-check-box-text label,
+.stu-form-wrap.stu-template-5 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-5 .stu-check-box-text label,
+.stu-form-wrap.stu-template-6 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-6 .stu-check-box-text label,
+.stu-form-wrap.stu-template-7 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-7 .stu-check-box-text label,
+.stu-form-wrap.stu-template-8 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-8 .stu-check-box-text label,
+.stu-form-wrap.stu-template-9 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-9 .stu-check-box-text label,
+.stu-form-wrap.stu-template-10 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-10 .stu-check-box-text label,
+.stu-form-wrap.stu-template-11 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-11 .stu-check-box-text label,
+.stu-form-wrap.stu-template-12 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-12 .stu-check-box-text label,
+.stu-form-wrap.stu-template-13 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-13 .stu-check-box-text label,
+.stu-form-wrap.stu-template-14 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-14 .stu-check-box-text label,
+.stu-form-wrap.stu-template-15 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-15 .stu-check-box-text label,
+.stu-form-wrap.stu-template-16 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-16 .stu-check-box-text label,
+.stu-form-wrap.stu-template-17 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-17 .stu-check-box-text label,
+.stu-form-wrap.stu-template-18 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-18 .stu-check-box-text label,
+.stu-form-wrap.stu-template-19 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-19 .stu-check-box-text label,
+.stu-form-wrap.stu-template-20 p.stu-heading-paragraph label,
+.stu-form-wrap.stu-template-20 .stu-check-box-text label {
+  float: none;
+}
+.stu-form-wrap.stu-template-1 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-2 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-3 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-4 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-5 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-6 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-7 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-8 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-9 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-10 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-11 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-12 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-13 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-14 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-15 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-16 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-17 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-18 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-19 .stu-field-wrap.name-field,
+.stu-form-wrap.stu-template-20 .stu-field-wrap.name-field {
+  margin-right: 1px;
+}
+.stu-form-wrap.stu-template-1 input[type="text"],
+.stu-form-wrap.stu-template-1 input[type="email"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 input[type="tel"],
+.stu-form-wrap.stu-template-1 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  select.stu-select-option,
+.stu-form-wrap.stu-template-2 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-2 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-2 input[type="tel"],
+.stu-form-wrap.stu-template-2 input[type="url"],
+.stu-form-wrap.stu-template-2 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-3 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-3 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-3 input[type="tel"],
+.stu-form-wrap.stu-template-3 input[type="url"],
+.stu-form-wrap.stu-template-3 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-4 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-4 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-4 input[type="tel"],
+.stu-form-wrap.stu-template-4 input[type="url"],
+.stu-form-wrap.stu-template-4 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-wrap.stu-template-5 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 input[type="tel"],
+.stu-form-wrap.stu-template-5 input[type="url"],
+.stu-form-wrap.stu-template-5 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-wrap.stu-template-6 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 input[type="tel"],
+.stu-form-wrap.stu-template-6 input[type="url"],
+.stu-form-wrap.stu-template-6 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-7 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="tel"],
+.stu-form-wrap.stu-template-7 input[type="url"],
+.stu-form-wrap.stu-template-7 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-wrap.stu-template-8 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-8 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-8 input[type="tel"],
+.stu-form-wrap.stu-template-8 input[type="url"],
+.stu-form-wrap.stu-template-8 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-9 input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 input[type="tel"],
+.stu-form-wrap.stu-template-9 input[type="url"],
+.stu-form-wrap.stu-template-9 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-10 input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 input[type="tel"],
+.stu-form-wrap.stu-template-10 input[type="url"],
+.stu-form-wrap.stu-template-10 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-11 input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-11 input[type="tel"],
+.stu-form-wrap.stu-template-11 input[type="url"],
+.stu-form-wrap.stu-template-11 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-12 input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 input[type="tel"],
+.stu-form-wrap.stu-template-12 input[type="url"],
+.stu-form-wrap.stu-template-12 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-13 input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="number"],
+.stu-form-wrap.stu-template-13 input[type="url"],
+.stu-form-wrap.stu-template-13 input[type="email"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-13 input[type="tel"],
+.stu-form-wrap.stu-template-14 input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-14 input[type="tel"],
+.stu-form-wrap.stu-template-14 input[type="url"],
+.stu-form-wrap.stu-template-14 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-15 input[type="text"],
+.stu-form-wrap.stu-template-15 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-15 input[type="tel"],
+.stu-form-wrap.stu-template-15 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-16 input[type="text"],
+.stu-form-wrap.stu-template-16 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 input[type="tel"],
+.stu-form-wrap.stu-template-16 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-17 input[type="text"],
+.stu-form-wrap.stu-template-17 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-17 input[type="tel"],
+.stu-form-wrap.stu-template-17 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-18 input[type="text"],
+.stu-form-wrap.stu-template-18 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-18 input[type="tel"],
+.stu-form-wrap.stu-template-18 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-19 input[type="text"],
+.stu-form-wrap.stu-template-19 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-19 input[type="tel"],
+.stu-form-wrap.stu-template-19 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  textarea.stu-txt-area,
+.stu-form-wrap.stu-template-20 input[type="text"],
+.stu-form-wrap.stu-template-20 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-20 input[type="tel"],
+.stu-form-wrap.stu-template-20 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  textarea.stu-txt-area {
+  color: inherit;
+  font-weight: 400;
+  font-size: 13px;
+  /* text-align: inherit; */
+  background-color: rgba(0, 0, 0, 0.08);
+  border: none;
+}
+.stu-form-wrap.stu-template-1 input[type="text"]:focus,
+.stu-form-wrap.stu-template-1 input[type="email"]:focus,
+.stu-form-wrap.stu-template-2 input[type="text"]:focus,
+.stu-form-wrap.stu-template-2 input[type="email"]:focus,
+.stu-form-wrap.stu-template-3 input[type="text"]:focus,
+.stu-form-wrap.stu-template-3 input[type="email"]:focus,
+.stu-form-wrap.stu-template-4 input[type="text"]:focus,
+.stu-form-wrap.stu-template-4 input[type="email"]:focus,
+.stu-form-wrap.stu-template-5 input[type="text"]:focus,
+.stu-form-wrap.stu-template-5 input[type="email"]:focus,
+.stu-form-wrap.stu-template-6 input[type="text"]:focus,
+.stu-form-wrap.stu-template-6 input[type="email"]:focus,
+.stu-form-wrap.stu-template-7 input[type="text"]:focus,
+.stu-form-wrap.stu-template-7 input[type="email"]:focus,
+.stu-form-wrap.stu-template-8 input[type="text"]:focus,
+.stu-form-wrap.stu-template-8 input[type="email"]:focus,
+.stu-form-wrap.stu-template-9 input[type="text"]:focus,
+.stu-form-wrap.stu-template-9 input[type="email"]:focus,
+.stu-form-wrap.stu-template-10 input[type="text"]:focus,
+.stu-form-wrap.stu-template-10 input[type="email"]:focus,
+.stu-form-wrap.stu-template-11 input[type="text"]:focus,
+.stu-form-wrap.stu-template-11 input[type="email"]:focus,
+.stu-form-wrap.stu-template-12 input[type="text"]:focus,
+.stu-form-wrap.stu-template-12 input[type="email"]:focus,
+.stu-form-wrap.stu-template-13 input[type="text"]:focus,
+.stu-form-wrap.stu-template-13 input[type="email"]:focus,
+.stu-form-wrap.stu-template-14 input[type="text"]:focus,
+.stu-form-wrap.stu-template-14 input[type="email"]:focus,
+.stu-form-wrap.stu-template-15 input[type="text"]:focus,
+.stu-form-wrap.stu-template-15 input[type="email"]:focus,
+.stu-form-wrap.stu-template-16 input[type="text"]:focus,
+.stu-form-wrap.stu-template-16 input[type="email"]:focus,
+.stu-form-wrap.stu-template-17 input[type="text"]:focus,
+.stu-form-wrap.stu-template-17 input[type="email"]:focus,
+.stu-form-wrap.stu-template-18 input[type="text"]:focus,
+.stu-form-wrap.stu-template-18 input[type="email"]:focus,
+.stu-form-wrap.stu-template-19 input[type="text"]:focus,
+.stu-form-wrap.stu-template-19 input[type="email"]:focus,
+.stu-form-wrap.stu-template-20 input[type="text"]:focus,
+.stu-form-wrap.stu-template-20 input[type="email"]:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-1 .stu-footer-text,
+.stu-form-wrap.stu-template-2 .stu-footer-text,
+.stu-form-wrap.stu-template-3 .stu-footer-text,
+.stu-form-wrap.stu-template-4 .stu-footer-text,
+.stu-form-wrap.stu-template-5 .stu-footer-text,
+.stu-form-wrap.stu-template-6 .stu-footer-text,
+.stu-form-wrap.stu-template-7 .stu-footer-text,
+.stu-form-wrap.stu-template-8 .stu-footer-text,
+.stu-form-wrap.stu-template-9 .stu-footer-text,
+.stu-form-wrap.stu-template-10 .stu-footer-text,
+.stu-form-wrap.stu-template-11 .stu-footer-text,
+.stu-form-wrap.stu-template-12 .stu-footer-text,
+.stu-form-wrap.stu-template-13 .stu-footer-text,
+.stu-form-wrap.stu-template-14 .stu-footer-text,
+.stu-form-wrap.stu-template-15 .stu-footer-text,
+.stu-form-wrap.stu-template-16 .stu-footer-text,
+.stu-form-wrap.stu-template-17 .stu-footer-text,
+.stu-form-wrap.stu-template-18 .stu-footer-text,
+.stu-form-wrap.stu-template-19 .stu-footer-text,
+.stu-form-wrap.stu-template-20 .stu-footer-text {
+  opacity: 0.6;
+}
+.stu-form-wrap.stu-template-1 .stu-heading-text,
+.stu-form-wrap.stu-template-2 .stu-heading-text,
+.stu-form-wrap.stu-template-3 .stu-heading-text,
+.stu-form-wrap.stu-template-4 .stu-heading-text,
+.stu-form-wrap.stu-template-5 .stu-heading-text,
+.stu-form-wrap.stu-template-6 .stu-heading-text,
+.stu-form-wrap.stu-template-7 .stu-heading-text,
+.stu-form-wrap.stu-template-8 .stu-heading-text,
+.stu-form-wrap.stu-template-9 .stu-heading-text,
+.stu-form-wrap.stu-template-10 .stu-heading-text,
+.stu-form-wrap.stu-template-11 .stu-heading-text,
+.stu-form-wrap.stu-template-12 .stu-heading-text,
+.stu-form-wrap.stu-template-13 .stu-heading-text,
+.stu-form-wrap.stu-template-14 .stu-heading-text,
+.stu-form-wrap.stu-template-15 .stu-heading-text,
+.stu-form-wrap.stu-template-16 .stu-heading-text,
+.stu-form-wrap.stu-template-17 .stu-heading-text,
+.stu-form-wrap.stu-template-18 .stu-heading-text,
+.stu-form-wrap.stu-template-19 .stu-heading-text,
+.stu-form-wrap.stu-template-20 .stu-heading-text {
+  font-size: 26px !important;
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-1 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-2 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-3 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-4 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-5 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-6 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-7 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-8 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-9 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-10 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-11 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-12 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-13 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-14 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-15 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-16 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-17 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-18 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-19 .stu-heading-paragraph,
+.stu-form-wrap.stu-template-20 .stu-heading-paragraph {
+  font-size: 14px !important;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-1 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-2 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-3 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-4 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-5 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-6 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-7 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-8 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-9 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-10 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-11 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-12 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-13 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-14 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-15 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-16 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-17 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-18 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-19 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-20 .stu-unlock-form-wrap {
+  padding: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+.stu-form-wrap.stu-template-1 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-2 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-3 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-4 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-5 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-6 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-7 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-8 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-9 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-10 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-11 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-12 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-13 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-14 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-15 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-16 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-17 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-18 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-19 .stu-unlock-form-wrap,
+.stu-form-wrap.stu-template-20 .stu-unlock-form-wrap {
+  position: relative;
+  z-index: 5;
+}
+.stu-form-wrap.stu-template-1 {
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  padding: 0;
+}
+.stu-form-wrap.stu-template-1 .top-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-1 .top-lines span {
+  display: block;
+  flex: 0 0 33.33%;
+}
+.stu-form-wrap.stu-template-1 .top-lines span:nth-child(1) {
+  background-color: #d9a86f;
+}
+.stu-form-wrap.stu-template-1 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-1 .top-lines span:nth-child(3) {
+  background-color: #45b1e4;
+}
+.stu-form-wrap.stu-template-1 .stu-icon-holder {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.stu-form-wrap.stu-template-1 .stu-icon-holder i {
+  font-size: 38px;
+  color: inherit;
+  opacity: 0.6;
+}
+.stu-form-wrap.stu-template-1 .stu-form-submit {
+  background-color: gray;
+  color: white;
+  width: auto;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 40%;
+}
+.stu-form-wrap.stu-template-1 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-1 input[type="text"],
+.stu-form-wrap.stu-template-1 input[type="email"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 input[type="url"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 input[type="tel"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-template-1
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-template-1
+  .stu-custom-field-wrap.stu-select-text
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: inherit;
+  background-color: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-1 input[type="text"]:focus,
+.stu-form-wrap.stu-template-1 input[type="email"]:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-wrap.stu-template-1 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-1 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-1 .padding {
+  padding: 40px 24px 15px;
+}
+.stu-form-wrap.stu-template-1 .stu-icon-holder {
+  padding-top: 30px;
+}
+.stu-form-wrap.stu-template-2 {
+  position: relative;
+  padding: 40px 0 0;
+}
+.stu-form-wrap.stu-template-2 .top-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-2 .top-lines span {
+  display: block;
+  flex: 0 0 33.33%;
+}
+.stu-form-wrap.stu-template-2 .top-lines span:nth-child(1) {
+  background-color: #d9a86f;
+}
+.stu-form-wrap.stu-template-2 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-2 .top-lines span:nth-child(3) {
+  background-color: #45b1e4;
+}
+.stu-form-wrap.stu-template-2 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-2 .both-fields-wrap input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-2
+  input[type="text"],
+.stu-form-wrap.stu-template-2 .both-fields-wrap input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-2
+  input[type="number"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-2
+  input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-2
+  input[type="tel"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-2
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-2
+  textarea.stu-txt-area {
+  text-align: left;
+}
+.stu-form-wrap.stu-template-2 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-2 .stu-form-submit {
+  background-color: #ff654b;
+  color: white;
+}
+.stu-form-wrap.stu-template-2 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-2 .stu-form-submit {
+  width: auto;
+}
+.stu-form-wrap.stu-template-2 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-2 .stu-heading-text span {
+  opacity: 0.6;
+  color: inherit;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.stu-form-wrap.stu-template-2 .stu-heading-paragraph {
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-2 .padding {
+  padding: 40px 24px 0;
+}
+.stu-form-wrap.stu-template-2 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-2 .stu-unlock-form-wrap {
+  padding: 0 40px 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-3 {
+  text-align: center;
+  background-color: white;
+}
+.stu-form-wrap.stu-template-3 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-3 .both-fields-wrap .name-field {
+  margin: 0 0 5px 0;
+}
+.stu-form-wrap.stu-template-3 .form-contents-wrap {
+  display: flex;
+}
+.stu-form-wrap.stu-template-3 .form-contents-wrap .stu-icon-holder {
+  flex: 1;
+  max-width: 168px;
+  background-color: #df6767;
+}
+.stu-form-wrap.stu-template-3 .form-contents-wrap .form-holder {
+  flex: 2;
+  padding: 40px 28px;
+}
+.stu-form-wrap.stu-template-3 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-3 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-3 .stu-form-submit {
+  background-color: #df6767;
+  color: white;
+  width: auto;
+}
+.stu-form-wrap.stu-template-3 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-3 .stu-btn-parent {
+  max-width: 100%;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-3 .icon {
+  margin-top: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.stu-form-wrap.stu-template-3 .icon i {
+  color: white;
+  line-height: 74px;
+  font-size: 24px;
+}
+.stu-form-wrap.stu-template-3 input[type="text"],
+.stu-form-wrap.stu-template-3 input[type="email"] {
+  text-align: left;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-3 .stu-unlock-form-wrap {
+  padding: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-4 {
+  text-align: left;
+  background-color: #df6767;
+  color: white;
+}
+.stu-form-wrap.stu-template-4 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-4 .both-fields-wrap .name-field {
+  margin: 0 0 5px 0;
+}
+.stu-form-wrap.stu-template-4 .form-contents-wrap {
+  display: flex;
+  align-items: center;
+}
+.stu-form-wrap.stu-template-4 .form-contents-wrap .stu-icon-holder {
+  flex: 1;
+  max-width: 240px;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-4 .form-contents-wrap .form-holder {
+  flex: 2;
+  padding: 40px 28px;
+}
+.stu-form-wrap.stu-template-4 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-4 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-4 .stu-form-submit {
+  text-align: left;
+  background-color: white;
+  color: #df6767;
+  border-radius: 3px;
+  width: auto;
+}
+.stu-form-wrap.stu-template-4 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-4 .stu-btn-parent {
+  max-width: 100%;
+}
+.stu-form-wrap.stu-template-4 .icon {
+  margin-top: 64%;
+  display: inline-block;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  line-height: 110px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 12px;
+}
+.stu-form-wrap.stu-template-4 .icon img {
+  display: inline-block;
+  max-width: 90px;
+}
+.stu-form-wrap.stu-template-4 input[type="text"],
+.stu-form-wrap.stu-template-4 input[type="email"] {
+  text-align: left;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-4 .stu-unlock-form-wrap {
+  padding-top: 40px;
+}
+.stu-form-wrap.stu-template-5 {
+  text-align: center;
+  background-color: #3d3e40;
+  color: white;
+  padding: 24px 34px;
+  position: relative;
+}
+.stu-form-wrap.stu-template-5 form {
+  max-width: 458px;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-5 .top-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-5 .top-lines span {
+  display: block;
+  flex: 0 0 33.33%;
+}
+.stu-form-wrap.stu-template-5 .top-lines span:nth-child(1) {
+  background-color: #d9a86f;
+}
+.stu-form-wrap.stu-template-5 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-5 .top-lines span:nth-child(3) {
+  background-color: #45b1e4;
+}
+.stu-form-wrap.stu-template-5 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-5 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-5 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-5 .stu-form-submit {
+  width: auto;
+  border-radius: 3px;
+}
+.stu-form-wrap.stu-template-5 h2.stu-heading-text {
+  color: inherit;
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-5 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-5 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-5 input[type="text"],
+.stu-form-wrap.stu-template-5 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 input[type="tel"],
+.stu-form-wrap.stu-template-5 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  select.stu-select-option {
+  background-color: rgba(0, 0, 0, 0.14);
+  color: inherit;
+  text-align: left;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-5 .stu-form-submit {
+  background-color: white;
+  color: #df6767;
+}
+.stu-form-wrap.stu-template-5 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-5 .stu-footer-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-5 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-5 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-6 {
+  color: white;
+  background-color: #3c6065;
+  position: relative;
+  padding: 40px 0 0;
+  text-align: left;
+}
+.stu-form-wrap.stu-template-6 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-6 .both-fields-wrap input[type="text"],
+.stu-form-wrap.stu-template-6 .both-fields-wrap input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 input[type="tel"],
+.stu-form-wrap.stu-template-6 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.stu-form-wrap.stu-template-6 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-6 .stu-form-submit {
+  background-color: #ecc45c;
+  color: white;
+}
+.stu-form-wrap.stu-template-6 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-6 .stu-form-submit {
+  width: 100%;
+}
+.stu-form-wrap.stu-template-6 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-6 .stu-heading-text span {
+  opacity: 0.6;
+  color: inherit;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.stu-form-wrap.stu-template-6 .stu-heading-paragraph {
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-6 .padding {
+  padding: 40px 24px 40px;
+}
+.stu-form-wrap.stu-template-6 .stu-footer-text {
+  padding: 15px 20px;
+  margin: 0;
+}
+.stu-form-wrap.stu-template-6 .bottom-wrap {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.stu-form-wrap.stu-template-6 .stu-terms-agreement-wrap {
+  margin-bottom: 0;
+}
+.stu-form-wrap.stu-template-6 .two-col-head {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-6 .two-col-head .left-col {
+  flex: 1;
+  max-width: 108px;
+}
+.stu-form-wrap.stu-template-6 .two-col-head .left-col .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-6 .two-col-head .left-col .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-6 .two-col-head .right-col {
+  flex: 2;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-6 .stu-unlock-button {
+  max-width: 40%;
+}
+.stu-form-wrap.stu-template-6 .stu-unlock-form-wrap {
+  padding: 0 40px 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-7 {
+  text-align: center;
+  background-color: #1f4e68;
+  color: rgba(255, 255, 255, 0.68);
+  padding: 20px 0;
+}
+.stu-form-wrap.stu-template-7 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-7 .stu-form-content-wrap {
+  margin: 0 auto;
+  max-width: 500px;
+}
+.stu-form-wrap.stu-template-7 .both-fields-wrap {
+  width: 100%;
+}
+.stu-form-wrap.stu-template-7 .both-fields-wrap > div {
+  flex: 1;
+}
+.stu-form-wrap.stu-template-7 .both-fields-wrap > div.stu-submit-btn-wrap {
+  max-width: 48px;
+  height: 48px;
+  margin-left: 15px;
+}
+.stu-form-wrap.stu-template-7
+  .both-fields-wrap
+  > div.stu-submit-btn-wrap
+  button {
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+.stu-form-wrap.stu-template-7 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-right: 15px;
+}
+.stu-form-wrap.stu-template-7 h2.stu-heading-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-7 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-7 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-7 .stu-title-wrap {
+  padding-left: 40px;
+  text-align: left;
+}
+.stu-form-wrap.stu-template-7 input[type="text"],
+.stu-form-wrap.stu-template-7 input[type="email"] {
+  text-align: left;
+  background-color: transparent;
+  color: inherit;
+  border-bottom-color: rgba(255, 255, 255, 0.24);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.stu-form-wrap.stu-template-7 input[type="text"]:focus,
+.stu-form-wrap.stu-template-7 input[type="email"]:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.68);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.68);
+}
+.stu-form-wrap.stu-template-7 .stu-form-submit {
+  background-color: #ecc45c;
+  color: white;
+  border-radius: 50px;
+}
+.stu-form-wrap.stu-template-7 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-7 .has-pre-icon {
+  position: relative;
+}
+.stu-form-wrap.stu-template-7 .has-pre-icon i {
+  position: absolute;
+  top: 15px;
+  right: auto;
+  left: 0;
+  font-size: 18px;
+  color: inherit;
+}
+.stu-form-wrap.stu-template-7 .has-pre-icon input[type="text"],
+.stu-form-wrap.stu-template-7 .has-pre-icon input[type="email"] {
+  padding-left: 34px !important;
+  padding-right: 10px !important;
+}
+.stu-form-wrap.stu-template-7 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-7 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-7 .heading-wrap {
+  margin-bottom: 24px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+.stu-form-wrap.stu-template-7 .heading-wrap h2.stu-heading-text {
+  margin-bottom: 4px;
+}
+.stu-form-wrap.stu-template-7 .heading-wrap p.stu-heading-paragraph {
+  margin-bottom: 0;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  input.stu-email.stu-rounded {
+  padding-left: 0px !important;
+}
+
+.stu-form-wrap.stu-template-8 {
+  text-align: left;
+  background-color: #a84141;
+  color: white;
+}
+.stu-form-wrap.stu-template-8 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-8 .both-fields-wrap .name-field {
+  margin: 0 0 5px 0;
+}
+.stu-form-wrap.stu-template-8 .form-contents-wrap {
+  display: flex;
+}
+.stu-form-wrap.stu-template-8 .form-contents-wrap .stu-icon-holder {
+  flex: 1;
+  max-width: 240px;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-8 .form-contents-wrap .form-holder {
+  flex: 2;
+  padding: 40px 28px;
+}
+.stu-form-wrap.stu-template-8 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-8 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-8 .stu-form-submit {
+  text-align: left;
+  background-color: white;
+  color: #df6767;
+  border-radius: 3px;
+  width: auto;
+}
+.stu-form-wrap.stu-template-8 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-8 .stu-btn-parent {
+  max-width: 100%;
+}
+.stu-form-wrap.stu-template-8 .stu-icon-holder {
+  background-color: rgba(0, 0, 0, 0.24);
+  padding: 40px;
+}
+.stu-form-wrap.stu-template-8 .icon {
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-8 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-8 input[type="text"],
+.stu-form-wrap.stu-template-8 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-8 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-8 input[type="tel"],
+.stu-form-wrap.stu-template-8 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.24);
+  border-radius: 64px;
+  color: inherit;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-8 .stu-unlock-form-wrap {
+  padding-top: 40px;
+}
+.stu-form-wrap.stu-template-8 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-8 .stu-heading-paragraph {
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-8 .stu-form-submit {
+  border-radius: 64px;
+  padding: 0 40px;
+  background-color: #ecc45c;
+  color: white;
+}
+.stu-form-wrap.stu-template-9 {
+  text-align: center;
+  background-color: #d64141;
+  color: white;
+}
+.stu-form-wrap.stu-template-9 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-9 .both-fields-wrap .name-field {
+  margin: 0 0 5px 0;
+}
+.stu-form-wrap.stu-template-9 .form-contents-wrap {
+  position: relative;
+  display: flex;
+}
+.stu-form-wrap.stu-template-9 .form-contents-wrap .form-holder {
+  flex: 2;
+  padding: 40px 28px;
+}
+.stu-form-wrap.stu-template-9 .form-contents-wrap .white-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../images/temp-9-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 34px 0;
+  height: 100%;
+  width: 300px;
+}
+.stu-form-wrap.stu-template-9 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-9 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-9 .stu-form-submit {
+  color: white;
+  width: auto;
+}
+.stu-form-wrap.stu-template-9 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-9 .stu-btn-parent {
+  max-width: 100%;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-9 .icon {
+  margin-top: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.stu-form-wrap.stu-template-9 .icon i {
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 74px;
+  font-size: 24px;
+}
+.stu-form-wrap.stu-template-9 input[type="text"],
+.stu-form-wrap.stu-template-9 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 input[type="tel"],
+.stu-form-wrap.stu-template-9 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  border-radius: 64px;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.68);
+}
+.stu-form-wrap.stu-template-9 input[type="text"]:focus,
+.stu-form-wrap.stu-template-9 input[type="email"]:focus {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+.stu-form-wrap.stu-template-9 .stu-form-submit {
+  border-radius: 64px;
+  background-color: white;
+  color: #d64141;
+}
+.stu-form-wrap.stu-template-9 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-9 .stu-heading-paragraph {
+  margin-bottom: 20px;
+}
+.stu-form-wrap.stu-template-9 .form-holder {
+  max-width: 60%;
+}
+.stu-form-wrap.stu-template-9 .has-pre-icon i {
+  color: black;
+}
+.stu-form-wrap.stu-template-9 .stu-unlock-form-wrap {
+  padding: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.stu-form-wrap.stu-template-10 {
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  padding: 0;
+  text-align: left;
+}
+.stu-form-wrap.stu-template-10 .top-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-10 .top-lines span {
+  display: block;
+  flex: 0 0 33.33%;
+}
+.stu-form-wrap.stu-template-10 .top-lines span:nth-child(1) {
+  background-color: #d9a86f;
+}
+.stu-form-wrap.stu-template-10 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-10 .top-lines span:nth-child(3) {
+  background-color: #45b1e4;
+}
+.stu-form-wrap.stu-template-10 .stu-icon-holder {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.stu-form-wrap.stu-template-10 .stu-icon-holder i {
+  font-size: 38px;
+  color: inherit;
+  opacity: 0.6;
+}
+.stu-form-wrap.stu-template-10 .stu-form-submit {
+  background-color: gray;
+  color: white;
+  width: auto;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 40%;
+}
+.stu-form-wrap.stu-template-10 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-10 input[type="text"],
+.stu-form-wrap.stu-template-10 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 input[type="tel"],
+.stu-form-wrap.stu-template-10 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: inherit;
+  background-color: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-10 input[type="text"]:focus,
+.stu-form-wrap.stu-template-10 input[type="email"]:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap
+  .stu-form-wrap.stu-template-10
+  .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-10 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-10 .two-col {
+  display: flex;
+}
+.stu-form-wrap.stu-template-10 .two-col .left-holder {
+  align-self: center;
+  padding: 40px;
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-10 .two-col .right-holder {
+  padding: 40px 24px 0;
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+.stu-form-wrap.stu-template-10 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-10 .both-fields-wrap .stu-name {
+  margin-bottom: 10px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-3
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-4
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  select.stu-select-option {
+  width: 168px;
+}
+.stu-form-wrap.stu-template-11 {
+  color: white;
+  background-image: url("../images/bg-11.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 40px 0 0;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-11:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(55, 59, 62, 0.8);
+  z-index: 2;
+}
+.stu-form-wrap.stu-template-11 .stu-subscription-form {
+  position: relative;
+  z-index: 3;
+}
+.stu-form-wrap.stu-template-11 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-11 .both-fields-wrap input[type="text"],
+.stu-form-wrap.stu-template-11 .both-fields-wrap input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-11 input[type="tel"],
+.stu-form-wrap.stu-template-11 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.stu-form-wrap.stu-template-11 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-11 .stu-form-submit {
+  background-color: #2fd1c7;
+  color: white;
+}
+.stu-form-wrap.stu-template-11 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-11 .stu-field-btn-wrap {
+  max-width: 240px;
+}
+.stu-form-wrap.stu-template-11 .stu-field-btn-wrap {
+  display: none;
+}
+.stu-form-wrap.stu-template-11 .stu-heading-text {
+  font-size: 48px !important;
+}
+.stu-form-wrap.stu-template-11 .stu-form-submit {
+  width: 100%;
+}
+.stu-form-wrap.stu-template-11 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-11 .stu-heading-text span {
+  opacity: 0.6;
+  color: inherit;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.stu-form-wrap.stu-template-11 .stu-heading-paragraph {
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-11 .padding {
+  padding: 24px 24px 40px;
+}
+.stu-form-wrap.stu-template-11 .stu-footer-text {
+  background-color: rgba(255, 255, 255, 0.18);
+  padding: 15px 20px;
+  margin: 0;
+}
+.stu-form-wrap.stu-template-11 .stu-terms-agreement-wrap {
+  margin-bottom: 0;
+}
+.stu-form-wrap.stu-template-11 .two-col-head {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-11 .two-col-head .left-col {
+  flex: 1;
+  max-width: 108px;
+}
+.stu-form-wrap.stu-template-11 .two-col-head .left-col .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-11 .two-col-head .left-col .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-11 .two-col-head .right-col {
+  flex: 2;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-11 .stu-unlock-button {
+  max-width: 40%;
+}
+.stu-form-wrap.stu-template-11 .stu-unlock-form-wrap {
+  padding: 0 40px 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-11 .stu-unlock-form-wrap input[type="text"],
+.stu-form-wrap.stu-template-11 .stu-unlock-form-wrap input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.stu-form-wrap.stu-template-12 {
+  text-align: center;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 40px 0;
+}
+.stu-form-wrap.stu-template-12 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-12 .stu-form-content-wrap {
+  margin: 0 auto;
+  max-width: 580px;
+}
+.stu-form-wrap.stu-template-12 .both-fields-wrap {
+  width: 100%;
+}
+.stu-form-wrap.stu-template-12 .both-fields-wrap > div {
+  flex: 1;
+}
+.stu-form-wrap.stu-template-12 .both-fields-wrap > div.stu-submit-btn-wrap {
+  max-width: 48px;
+  height: 48px;
+  margin-left: 15px;
+}
+.stu-form-wrap.stu-template-12
+  .both-fields-wrap
+  > div.stu-submit-btn-wrap
+  button {
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+}
+.stu-form-wrap.stu-template-12 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-right: 15px;
+}
+.stu-form-wrap.stu-template-12 h2.stu-heading-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-12 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-12 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-12 .stu-title-wrap {
+  padding-left: 40px;
+  text-align: left;
+}
+.stu-form-wrap.stu-template-12 input[type="text"],
+.stu-form-wrap.stu-template-12 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 input[type="tel"],
+.stu-form-wrap.stu-template-12 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  background-color: transparent;
+  color: inherit;
+  border-bottom-color: rgba(0, 0, 0, 0.24);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.stu-form-wrap.stu-template-12 input[type="text"]:focus,
+.stu-form-wrap.stu-template-12 input[type="email"]:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.68);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.68);
+}
+.stu-form-wrap.stu-template-12 .stu-form-submit {
+  background-color: #ecc45c;
+  color: white;
+}
+.stu-form-wrap.stu-template-12 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-12 .has-pre-icon {
+  position: relative;
+}
+.stu-form-wrap.stu-template-12 .has-pre-icon i {
+  position: absolute;
+  top: 15px;
+  right: auto;
+  left: 0;
+  font-size: 18px;
+  color: inherit;
+}
+.stu-form-wrap.stu-template-12 .has-pre-icon input[type="text"],
+.stu-form-wrap.stu-template-12 .has-pre-icon input[type="email"] {
+  padding-left: 34px !important;
+  padding-right: 10px !important;
+}
+.stu-form-wrap.stu-template-12 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  padding-top: 18px;
+  margin-bottom: 0;
+}
+.stu-form-wrap.stu-template-12 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-12 .heading-wrap {
+  margin-bottom: 24px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+.stu-form-wrap.stu-template-12 .heading-wrap h2.stu-heading-text {
+  margin-bottom: 4px;
+}
+.stu-form-wrap.stu-template-12 .heading-wrap p.stu-heading-paragraph {
+  margin-bottom: 0;
+}
+.stu-form-wrap.stu-template-13 {
+  color: white;
+  background-image: url("../images/bg-11.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 40px;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-13:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(55, 59, 62, 0.8);
+  z-index: 2;
+}
+.stu-form-wrap.stu-template-13 .stu-subscription-form {
+  position: relative;
+  z-index: 3;
+}
+.stu-form-wrap.stu-template-13 .stu-icon-holder {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.stu-form-wrap.stu-template-13 .stu-icon-holder i {
+  font-size: 38px;
+  color: inherit;
+  opacity: 0.6;
+}
+.stu-form-wrap.stu-template-13 .stu-subscription-form {
+  max-width: 680px;
+  border: solid 4px white;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-13 .stu-form-submit {
+  background-color: #c94957;
+  color: white;
+  width: auto;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 40%;
+}
+.stu-form-wrap.stu-template-13 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-13 input[type="text"],
+.stu-form-wrap.stu-template-13 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-13 input[type="url"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-13 input[type="tel"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: inherit;
+  background-color: transparent;
+  border: solid 2px white;
+}
+.stu-form-wrap.stu-template-13 input[type="text"]:focus,
+.stu-form-wrap.stu-template-13 input[type="email"]:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.stu-form-wrap.stu-template-13 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-13 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-13 .padding {
+  padding: 40px 24px 15px;
+}
+.stu-form-wrap.stu-template-13 .stu-icon-holder {
+  padding-top: 30px;
+}
+.stu-form-wrap.stu-template-14 {
+  text-align: center;
+  background-color: #f3f5f6;
+  color: black;
+  padding: 24px 34px;
+  position: relative;
+}
+.stu-form-wrap.stu-template-14 form {
+  max-width: 458px;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-14 .top-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-14 .top-lines span {
+  display: block;
+  flex: 1 1 auto;
+}
+.stu-form-wrap.stu-template-14 .top-lines span:nth-child(1) {
+  background-color: black;
+}
+.stu-form-wrap.stu-template-14 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-14 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-14 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-14 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-14 .stu-form-submit {
+  width: auto;
+  border-radius: 3px;
+}
+.stu-form-wrap.stu-template-14 h2.stu-heading-text {
+  color: inherit;
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-14 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-14 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-14 input[type="text"],
+.stu-form-wrap.stu-template-14 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-14 input[type="tel"],
+.stu-form-wrap.stu-template-14 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  .stu-custom-field-wrap.stu-select-text {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: inherit;
+  text-align: left;
+  border-radius: 64px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-14 .stu-form-submit {
+  background-color: #8fc972;
+  color: #fff;
+  border-radius: 64px;
+}
+.stu-form-wrap.stu-template-14 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-14 .stu-footer-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-14 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-14 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-15 {
+  text-align: left;
+  background-color: #141822;
+  color: white;
+}
+.stu-form-wrap.stu-template-15 .both-fields-wrap .name-field {
+  margin: 0 4px 5px 0;
+}
+.stu-form-wrap.stu-template-15 .form-contents-wrap {
+  display: flex;
+}
+.stu-form-wrap.stu-template-15 .form-contents-wrap .stu-icon-holder {
+  flex: 1;
+  max-width: 240px;
+  text-align: center;
+  align-self: center;
+}
+.stu-form-wrap.stu-template-15 .form-contents-wrap .form-holder {
+  flex: 2;
+  padding: 40px 28px;
+}
+.stu-form-wrap.stu-template-15 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-15 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-15 .stu-form-submit {
+  text-align: center;
+  color: white;
+  background-color: #df6767;
+  border-radius: 3px;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-15 .stu-form-submit:hover {
+  background-color: white;
+  color: #df6767;
+}
+.stu-form-wrap.stu-template-15 .stu-btn-parent {
+  max-width: 200px;
+  margin-left: 4px;
+}
+.stu-form-wrap.stu-template-15 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  line-height: 110px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.18);
+  padding-top: 12px;
+}
+.stu-form-wrap.stu-template-15 .icon img {
+  display: inline-block;
+  max-width: 90px;
+}
+.stu-form-wrap.stu-template-15 input[type="text"],
+.stu-form-wrap.stu-template-15 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-15 input[type="tel"],
+.stu-form-wrap.stu-template-15 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.94);
+  border-radius: 3px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  select.stu-select-option.stu-rounded {
+  background: #3f3a3a99 !important;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-15
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-15 .stu-unlock-form-wrap {
+  padding-top: 40px;
+}
+.stu-form-wrap.stu-template-16 {
+  text-align: center;
+  background-color: #3b85e9;
+  color: white;
+  padding: 24px 34px;
+  position: relative;
+}
+.stu-form-wrap.stu-template-16 .top-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-16 .top-lines span {
+  display: block;
+  flex: 1 1 auto;
+}
+.stu-form-wrap.stu-template-16 .top-lines span:nth-child(1) {
+  background-color: black;
+}
+.stu-form-wrap.stu-template-16 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-16 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-16 h2.stu-heading-text {
+  color: inherit;
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-16 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-16 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-16 input[type="text"],
+.stu-form-wrap.stu-template-16 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 input[type="tel"],
+.stu-form-wrap.stu-template-16 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  .stu-custom-field-wrap.stu-select-text {
+  background-color: rgba(255, 255, 255, 0.14);
+  color: inherit;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  textarea.stu-txt-area.stu-rounded-text-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  textarea.stu-txt-area.stu-rounded-text-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  textarea.stu-txt-area.stu-rounded-text-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  textarea.stu-txt-area.stu-rounded-text-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  textarea.stu-txt-area.stu-rounded-text-area {
+  border-radius: 30px !important;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-16 .stu-btn-parent {
+  max-width: 200px;
+  margin-left: 5px;
+}
+.stu-form-wrap.stu-template-16 .stu-form-submit {
+  background-color: #50a1ff;
+  color: #fff;
+  border-radius: 64px;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-16 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-16 .stu-footer-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-16 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+  padding-top: 18px;
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-16 .icon i {
+  font-size: 38px;
+}
+.stu-form-wrap.stu-template-16 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-17 {
+  text-align: center;
+  background-color: white;
+  color: black;
+  position: relative;
+}
+.stu-form-wrap.stu-template-17 .top-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-17 .top-lines span {
+  display: block;
+  flex: 1 1 auto;
+}
+.stu-form-wrap.stu-template-17 .top-lines span:nth-child(1) {
+  background-color: #22c6a9;
+}
+.stu-form-wrap.stu-template-17 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-17 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-17 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-17 .stu-mid-wrap {
+  padding: 0 34px 24px;
+}
+.stu-form-wrap.stu-template-17 .stu-form-submit {
+  width: auto;
+  border-radius: 3px;
+}
+.stu-form-wrap.stu-template-17 h2.stu-heading-text {
+  color: inherit;
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-17 p.stu-heading-paragraph,
+.stu-form-wrap.stu-template-17 .stu-check-box-text {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-17 input[type="text"],
+.stu-form-wrap.stu-template-17 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-17 input[type="tel"],
+.stu-form-wrap.stu-template-17 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  .stu-custom-field-wrap.stu-select-text {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: inherit;
+  text-align: left;
+  border-radius: 64px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-17
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-17 .stu-form-submit {
+  background-color: #22c6a9;
+  color: #fff;
+  border-radius: 64px;
+}
+.stu-form-wrap.stu-template-17 .stu-form-submit:hover {
+  background-color: rgba(0, 0, 0, 0.68);
+  color: white;
+}
+.stu-form-wrap.stu-template-17 .stu-footer-text {
+  color: inherit;
+  padding: 0 20px 28px;
+  margin-top: 0;
+}
+.stu-form-wrap.stu-template-17 .icon {
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  line-height: 84px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.08);
+  padding-top: 18px;
+}
+.stu-form-wrap.stu-template-17 .icon img {
+  display: inline-block;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.stu-form-wrap.stu-template-17 .stu-icon-holder {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+}
+.stu-form-wrap.stu-template-18 {
+  text-align: center;
+  background-color: white;
+}
+.stu-form-wrap.stu-template-18 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-18 .both-fields-wrap .name-field {
+  margin: 0 0 5px 0;
+}
+.stu-form-wrap.stu-template-18 .form-contents-wrap .form-holder {
+  padding: 40px 28px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-18 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-18 .stu-footer-text {
+  padding: 0;
+}
+.stu-form-wrap.stu-template-18 .stu-form-submit {
+  background-color: #3b4248;
+  color: white;
+  width: auto;
+}
+.stu-form-wrap.stu-template-18 .stu-form-submit:hover {
+  background-color: #279cff;
+  color: white;
+}
+.stu-form-wrap.stu-template-18 .stu-btn-parent {
+  max-width: 100%;
+  text-align: center;
+}
+.stu-form-wrap.stu-template-18 .icon {
+  margin-top: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+.stu-form-wrap.stu-template-18 .icon i {
+  color: white;
+  line-height: 74px;
+  font-size: 24px;
+}
+.stu-form-wrap.stu-template-18 input[type="text"],
+.stu-form-wrap.stu-template-18 input[type="email"] {
+  text-align: left;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-18
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-18 .stu-unlock-form-wrap {
+  padding: 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-19 {
+  position: relative;
+}
+.stu-form-wrap.stu-template-19 .both-fields-wrap .stu-field-wrap:first-child {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-19 .both-fields-wrap input[type="text"],
+.stu-form-wrap.stu-template-19 .both-fields-wrap input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-19 input[type="tel"],
+.stu-form-wrap.stu-template-19 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  select.stu-select-option {
+  text-align: left;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-19
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-19 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-19 .stu-form-submit {
+  background-color: #ff654b;
+  color: white;
+}
+.stu-form-wrap.stu-template-19 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-19 .stu-btn-parent {
+  max-width: 200px;
+}
+.stu-form-wrap.stu-template-19 .stu-form-submit {
+  width: 100%;
+}
+.stu-form-wrap.stu-template-19 .stu-heading-text {
+  margin-bottom: 5px;
+}
+.stu-form-wrap.stu-template-19 .stu-heading-text span {
+  opacity: 0.6;
+  color: inherit;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.stu-form-wrap.stu-template-19 .stu-heading-paragraph {
+  margin-bottom: 24px;
+}
+.stu-form-wrap.stu-template-19 .padding {
+  padding: 40px 24px 0;
+}
+.stu-form-wrap.stu-template-19 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-19 .stu-unlock-form-wrap {
+  padding: 0 40px 40px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.stu-form-wrap.stu-template-20 {
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  padding: 0;
+  text-align: left;
+}
+.stu-form-wrap.stu-template-20 .top-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6px;
+  display: flex;
+  width: 100%;
+}
+.stu-form-wrap.stu-template-20 .top-lines span {
+  display: block;
+  flex: 1 1 auto;
+}
+.stu-form-wrap.stu-template-20 .top-lines span:nth-child(1) {
+  background-color: #d9a86f;
+}
+.stu-form-wrap.stu-template-20 .top-lines span:nth-child(2) {
+  background-color: #8fc972;
+}
+.stu-form-wrap.stu-template-20 .top-lines span:nth-child(3) {
+  background-color: #45b1e4;
+}
+.stu-form-wrap.stu-template-20 .stu-icon-holder {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.stu-form-wrap.stu-template-20 .stu-icon-holder i {
+  font-size: 38px;
+  color: inherit;
+  opacity: 0.6;
+}
+.stu-form-wrap.stu-template-20 .stu-form-submit {
+  background-color: gray;
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stu-form-wrap.stu-template-20 .stu-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+.stu-form-wrap.stu-template-20 input[type="text"],
+.stu-form-wrap.stu-template-20 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-20 input[type="tel"],
+.stu-form-wrap.stu-template-20 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  .stu-custom-field-wrap.stu-select-text {
+  text-align: inherit;
+  background-color: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-20 input[type="text"]:focus,
+.stu-form-wrap.stu-template-20 input[type="email"]:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="text"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="number"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="url"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  input[type="tel"]:focus,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  textarea.stu-txt-area.stu-rounded-text-area:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.stu-form-wrap.stu-template-20 .stu-form-loader-1 {
+  color: inherit;
+}
+.stu-form-wrap.stu-template-20 .stu-footer-text {
+  background-color: rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.stu-form-wrap.stu-template-20 .two-col {
+  padding: 40px;
+}
+.stu-form-wrap.stu-template-20 .stu-btn-parent {
+  max-width: 240px;
+}
+.stu-form-wrap.stu-template-20 .both-fields-wrap {
+  display: block;
+}
+.stu-form-wrap.stu-template-20 .both-fields-wrap .stu-name {
+  margin-bottom: 10px;
+}
+
+.rtl .stu-form-wrap.stu-template-1 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-2 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-3 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-4 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-5 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-6 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-7 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-8 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-9 .stu-field-wrap,
+.rtl .stu-form-wrap.stu-template-10 .stu-field-wrap {
+  margin-left: 4px;
+}
+.rtl .stu-form-wrap.stu-template-1 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-1 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-2 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-2 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-3 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-3 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-4 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-4 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-5 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-5 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-6 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-6 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-7 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-7 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-8 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-8 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-9 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-9 .stu-field-wrap input[type="email"],
+.rtl .stu-form-wrap.stu-template-10 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-10 .stu-field-wrap input[type="email"] {
+  text-align: right;
+}
+
+.rtl .stu-form-wrap.stu-template-3 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-3 .stu-field-wrap input[type="email"] {
+  padding-right: 48px !important;
+}
+
+.rtl .stu-form-wrap.stu-template-4 {
+  text-align: right;
+}
+.rtl .stu-form-wrap.stu-template-4 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-4 .stu-field-wrap input[type="email"] {
+  padding-right: 48px !important;
+}
+
+.rtl .stu-form-wrap.stu-template-7 .has-pre-icon input[type="email"],
+.rtl .stu-form-wrap.stu-template-7 .has-pre-icon input[type="text"] {
+  padding-left: 10px !important;
+  padding-right: 34px !important;
+}
+
+.rtl .stu-form-wrap.stu-template-7 .has-pre-icon i {
+  left: auto;
+  right: 0;
+}
+
+.rtl .stu-form-wrap.stu-template-8 {
+  text-align: right;
+}
+.rtl .stu-form-wrap.stu-template-8 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-8 .stu-field-wrap input[type="email"] {
+  padding-right: 48px !important;
+}
+
+.rtl .stu-form-wrap.stu-template-9 .stu-field-wrap input[type="text"],
+.rtl .stu-form-wrap.stu-template-9 .stu-field-wrap input[type="email"] {
+  padding-right: 48px !important;
+}
+
+.rtl .stu-form-wrap.stu-template-9 .form-contents-wrap .white-bg {
+  right: auto;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.rtl .stu-form-wrap.stu-template-10 {
+  text-align: right;
+}
+.rtl .stu-form-wrap.stu-template-10 .stu-footer-text {
+  text-align: center;
+}
+
+.stu-popup-innerwrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+}
+.stu-popup-innerwrap .stu-popup-wrapper {
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.stu-popup-innerwrap .stu-form-wrap {
+  width: auto;
+  height: auto;
+  min-width: 748px;
+  max-width: 748px !important;
+}
+.stu-popup-innerwrap .stu-form-wrap.stu-template-8 {
+  padding: 0;
+  max-width: 480px !important;
+}
+.stu-popup-innerwrap .stu-form-wrap.stu-template-8 .stu-content-wrap {
+  padding: 0 34px 34px;
+}
+.stu-popup-innerwrap .stu-main-outer-wrap:after {
+  display: none;
+}
+.stu-popup-innerwrap .stu-main-outer-wrap .stu-blur-overlay {
+  position: static;
+}
+.stu-popup-innerwrap .stu-popup-content-wrap {
+  position: relative;
+}
+.stu-popup-innerwrap .stu-popup-content-wrap .stu-popup-close {
+  position: absolute;
+  top: -34px;
+  right: -34px;
+  color: white;
+  background: rgba(255, 255, 255, 0.14);
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  line-height: 30px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 18px;
+  display: block;
+}
+.stu-popup-innerwrap .stu-popup-content-wrap .stu-popup-close:hover {
+  text-decoration: none;
+  box-shadow: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  height: 34px;
+  width: 34px;
+}
+.stu-popup-innerwrap .stu-popup-content-wrap .stu-popup-close:hover i {
+  color: white;
+}
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  .stu-form-wrap.stu-template-4 .both-fields-wrap {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-4 .both-fields-wrap .name-field {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .stu-form-wrap.stu-template-4 .stu-btn-parent {
+    margin-top: 15px;
+  }
+  .stu-form-wrap.stu-template-6 .two-col-head {
+    padding: 0 15px;
+  }
+  .stu-form-wrap.stu-template-7 .stu-form-content-wrap {
+    padding: 0 15px;
+  }
+  .stu-form-wrap.stu-template-9 .form-contents-wrap .white-bg {
+    width: 240px;
+  }
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-11,
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-12 {
+    max-width: 500px !important;
+  }
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-11 .stu-subs-img-hold,
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-12 .stu-subs-img-hold {
+    max-width: 100%;
+    width: 100%;
+  }
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-11 .stu-subs-img-hold img,
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-12 .stu-subs-img-hold img {
+    vertical-align: top;
+  }
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-19 {
+    max-width: 600px !important;
+  }
+  .stu-popup-wrapper {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 30px 0;
+  }
+  .stu-form-wrap {
+    max-width: 68% !important;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 767px) {
+  .stu-content-locked {
+    position: relative;
+    max-height: 800px;
+    min-height: 800px;
+    overflow: hidden;
+  }
+  .stu-form-wrap {
+    max-width: 90% !important;
+    padding: 20px;
+  }
+  .stu-form-wrap .both-fields-wrap {
+    display: block;
+  }
+  .stu-form-wrap .both-fields-wrap .name-field {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .stu-form-wrap p.stu-heading-paragraph,
+  .stu-form-wrap p.stu-check-box-text,
+  .stu-form-wrap .stu-check-box-text {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+  .stu-form-wrap.stu-template-1,
+  .stu-form-wrap.stu-template-2,
+  .stu-form-wrap.stu-template-3,
+  .stu-form-wrap.stu-template-4,
+  .stu-form-wrap.stu-template-5,
+  .stu-form-wrap.stu-template-6,
+  .stu-form-wrap.stu-template-7,
+  .stu-form-wrap.stu-template-8,
+  .stu-form-wrap.stu-template-9,
+  .stu-form-wrap.stu-template-10,
+  .stu-form-wrap.stu-template-11,
+  .stu-form-wrap.stu-template-12,
+  .stu-form-wrap.stu-template-13,
+  .stu-form-wrap.stu-template-14,
+  .stu-form-wrap.stu-template-15,
+  .stu-form-wrap.stu-template-16,
+  .stu-form-wrap.stu-template-17,
+  .stu-form-wrap.stu-template-18,
+  .stu-form-wrap.stu-template-19,
+  .stu-form-wrap.stu-template-20 {
+    padding: 34px 20px;
+  }
+  .stu-form-wrap.stu-template-1 .padding,
+  .stu-form-wrap.stu-template-2 .padding,
+  .stu-form-wrap.stu-template-3 .padding,
+  .stu-form-wrap.stu-template-4 .padding,
+  .stu-form-wrap.stu-template-5 .padding,
+  .stu-form-wrap.stu-template-6 .padding,
+  .stu-form-wrap.stu-template-7 .padding,
+  .stu-form-wrap.stu-template-8 .padding,
+  .stu-form-wrap.stu-template-9 .padding,
+  .stu-form-wrap.stu-template-10 .padding,
+  .stu-form-wrap.stu-template-11 .padding,
+  .stu-form-wrap.stu-template-12 .padding,
+  .stu-form-wrap.stu-template-13 .padding,
+  .stu-form-wrap.stu-template-14 .padding,
+  .stu-form-wrap.stu-template-15 .padding,
+  .stu-form-wrap.stu-template-16 .padding,
+  .stu-form-wrap.stu-template-17 .padding,
+  .stu-form-wrap.stu-template-18 .padding,
+  .stu-form-wrap.stu-template-19 .padding,
+  .stu-form-wrap.stu-template-20 .padding {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-1 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-2 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-3 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-4 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-5 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-6 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-7 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-8 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-9 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-10 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-11 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-12 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-13 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-14 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-15 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-16 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-17 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-18 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-19 .stu-unlock-form-wrap,
+  .stu-form-wrap.stu-template-20 .stu-unlock-form-wrap {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .stu-form-wrap.stu-template-1 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-2 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-3 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-4 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-5 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-6 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-7 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-8 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-9 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-10 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-11 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-12 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-13 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-14 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-15 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-16 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-17 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-18 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-19 .stu-unlock-form-wrap .stu-unlock-button,
+  .stu-form-wrap.stu-template-20 .stu-unlock-form-wrap .stu-unlock-button {
+    margin-top: 15px;
+  }
+  .stu-form-wrap.stu-template-2 .stu-heading-text span {
+    display: none;
+  }
+  .stu-form-wrap.stu-template-2 .stu-form-submit {
+    margin-top: 5px;
+  }
+  .stu-form-wrap.stu-template-3 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-3 .form-contents-wrap {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-3 .form-contents-wrap .stu-icon-holder {
+    max-width: 100%;
+    padding: 24px;
+  }
+  .stu-form-wrap.stu-template-3 .icon {
+    margin-top: 0;
+  }
+  .stu-form-wrap.stu-template-4 .form-contents-wrap {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-4 .form-contents-wrap .stu-icon-holder {
+    max-width: 100%;
+  }
+  .stu-form-wrap.stu-template-4 .form-contents-wrap .form-holder {
+    flex: 2;
+    padding: 20px 0 0;
+    text-align: center;
+  }
+  .stu-form-wrap.stu-template-4 .icon {
+    margin-top: 0;
+  }
+  .stu-form-wrap.stu-template-6 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-6 .top-wrap {
+    padding: 15px 15px 0;
+  }
+  .stu-form-wrap.stu-template-6 .bottom-wrap {
+    padding: 24px;
+  }
+  .stu-form-wrap.stu-template-6 .stu-form-submit {
+    margin-top: 5px;
+  }
+  .stu-form-wrap.stu-template-7 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-7 .heading-wrap {
+    margin-bottom: 0;
+  }
+  .stu-form-wrap.stu-template-7 .icon {
+    margin-bottom: 0;
+  }
+  .stu-form-wrap.stu-template-7 .stu-icon-holder {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-7 .stu-form-content-wrap {
+    padding: 24px;
+  }
+  .stu-form-wrap.stu-template-7 .stu-form-submit {
+    margin-top: 5px;
+  }
+  .stu-form-wrap.stu-template-7 .stu-submit-btn-wrap {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+  .stu-form-wrap.stu-template-8 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-8 .form-contents-wrap {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-8 .form-contents-wrap .stu-icon-holder {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .stu-form-wrap.stu-template-9 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-9 .form-holder {
+    max-width: 100%;
+  }
+  .stu-form-wrap.stu-template-9 .white-bg {
+    display: none;
+  }
+  .stu-form-wrap.stu-template-10 {
+    padding: 0;
+  }
+  .stu-form-wrap.stu-template-10 .two-col {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-10 .two-col .left-holder,
+  .stu-form-wrap.stu-template-10 .two-col .right-holder {
+    max-width: 100%;
+  }
+  .stu-form-wrap.stu-template-10 .two-col .left-holder {
+    padding: 15px;
+    text-align: center;
+  }
+  .stu-form-wrap.stu-template-10 .two-col .left-holder img {
+    max-width: 128px;
+  }
+  .stu-form-wrap.stu-template-10 .two-col .right-holder {
+    padding: 0 20px 20px;
+  }
+  .stu-popup-innerwrap .stu-form-wrap {
+    min-width: 200px;
+    margin: 0 20px;
+  }
+  .stu-popup-innerwrap .stu-form-wrap.stu-template-7 {
+    padding: 40px 20px;
+  }
+  .stu-popup-innerwrap .stu-popup-content-wrap .stu-popup-close {
+    top: -22px;
+    right: 0;
+    background-color: black;
+    z-index: 9;
+  }
+  .stu-popup-wrapper {
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 30px 0;
+  }
+  .stu-form-wrap.stu-template-15 .form-contents-wrap .stu-icon-holder {
+    max-width: 100%;
+  }
+  .stu-form-wrap.stu-template-15 .form-contents-wrap {
+    display: block;
+  }
+  .stu-form-wrap.stu-template-19 .stu-btn-parent,
+  .stu-form-wrap.stu-template-15 .stu-btn-parent {
+    margin-top: 5px;
+  }
+  .stu-form-wrap.stu-template-13 .padding {
+    padding: 15px;
+  }
+  .stu-form-wrap.stu-template-12 .both-fields-wrap > div.stu-submit-btn-wrap {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .stu-form-wrap.stu-template-17 .stu-mid-wrap {
+    padding: 0 0 10px;
+  }
+  .stu-form-wrap.stu-template-18 .form-contents-wrap .form-holder,
+  .stu-form-wrap.stu-template-20 .two-col,
+  .stu-form-wrap.stu-template-15 .form-contents-wrap .form-holder {
+    padding: 0;
+  }
+}
+
+.stu-form-loader-wraper {
+  display: none;
+  text-align: center;
+  margin-top: -14px;
+  margin-bottom: 28px;
+}
+
+.stu-form-loader {
+  display: inline-block;
+}
+
+.stu-form-loader-1,
+.stu-form-loader-1:before,
+.stu-form-loader-1:after {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.4s infinite ease-in-out;
+  animation: load7 1.4s infinite ease-in-out;
+}
+
+.stu-form-loader-1 {
+  font-size: 10px;
+  margin: 0;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.14s;
+  animation-delay: -0.14s;
+}
+
+.stu-form-loader-1:before,
+.stu-form-loader-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.stu-form-loader-1:before {
+  left: -12px;
+  -webkit-animation-delay: -0.28s;
+  animation-delay: -0.28s;
+}
+
+.stu-form-loader-1:after {
+  left: 12px;
+}
+
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+.stu-download-button {
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.68);
+  text-decoration: none;
+  line-height: 68px;
+  padding: 0 48px;
+  background: rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.08) 0 0 10px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+.stu-download-button i {
+  margin-right: 14px;
+}
+
+.stu-download-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.stu-terms-agreement-wrap label a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.stu-form-loader-wraper {
+  text-align: center;
+}
+
+.stu-countdown-timer-message {
+  flex: 0 0 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.88);
+  font-family: "Poppins";
+}
+
+.stu-countdown-number {
+  color: yellow;
+  font-weight: 700;
+}
+
+.stu-content-unlocked {
+  margin: 0;
+  padding: 0;
+}
+
+.stu-unlock-error-message {
+  display: none;
+}
+.stu-unlock-error-message span {
+  padding: 8px 15px;
+  text-align: center;
+  background-color: #df6767;
+  color: white;
+  font-size: 14px;
+  margin: 14px 0;
+  display: block;
+  width: 100%;
+}
+
+.stu-content-locked .stu-lock-content {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+.stu-popup-innerwrap.stu-delay-popup {
+  display: none;
+}
+
+/*Custom Field Css*/
+
+.stu-form-with-custom-fields textarea.stu-txt-area {
+  font-family: inherit;
+  height: 125px;
+  width: 100%;
+  border: none;
+  padding: 10px 18px;
+  color: inherit;
+}
+.stu-form-with-custom-fields textarea.stu-txt-area:focus,
+select.stu-select-option:focus {
+  outline: none;
+}
+.stu-form-with-custom-fields label.stu-checkbox-label {
+  padding-right: 15px;
+  font-size: 14px;
+}
+.stu-form-with-custom-fields .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields .stu-custom-field-wrap.stu-select-text {
+  font-size: 12px;
+  border: none;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin-bottom: 5px;
+  padding: 10px 18px;
+  background: #ebebeb;
+  height: auto;
+  min-height: 48px;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  .stu-custom-field-wrap.stu-select-text {
+  flex-direction: column;
+}
+
+.stu-form-with-custom-fields span.stu-checkbox-item,
+span.stu-radio-item {
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.stu-form-with-custom-fields
+  .stu-each-custom-field.stu-checkbox-wrap
+  input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+}
+.stu-form-with-custom-fields select.stu-select-option {
+  width: 260px;
+  height: 40px;
+  /* margin-left: 13px; */
+  border: none;
+  padding: 10px;
+  color: inherit;
+}
+.stu-form-with-custom-fields
+  .stu-each-custom-field
+  .stu-checkbox-wrap
+  input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+.stu-form-with-custom-fields .stu-custom-field-wrap.stu-select-text {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  /* margin: 10px 18px; */
+  padding: 15px 18px;
+  font-size: 12px;
+}
+.stu-form-with-custom-fields
+  .stu-each-custom-field.stu-checkbox-wrap
+  input[type="radio"] {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #000;
+}
+.stu-form-with-custom-fields .stu-popup-wrapper .stu-checkbox-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: 85%;
+  line-height: 25px;
+}
+.stu-form-with-custom-fields .stu-checkbox-value {
+  margin-left: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: 75%;
+  line-height: 25px;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  textarea.stu-txt-area.stu-rounded-text-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  textarea.stu-txt-area.stu-rounded-text-area {
+  border-radius: 0px;
+}
+.stu-form-with-custom-fields textarea.stu-txt-area.stu-rounded-text-area {
+  border-radius: 37px;
+}
+.stu-template-1 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-2 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-3 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-4 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-5 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-7 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-10 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-11 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-12 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-13 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-15 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-17 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-18 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-19 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-20 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-21 textarea.stu-txt-area.stu-rounded-text-area,
+.stu-template-22 textarea.stu-txt-area.stu-rounded-text-area {
+  border-radius: 0px;
+}
+/* Hide Calendar Icon In Chrome */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.stu-template-1 .stu-rounded,
+.stu-template-2 .stu-rounded,
+.stu-template-3 .stu-rounded,
+.stu-template-4 .stu-rounded,
+.stu-template-5 .stu-rounded,
+.stu-template-6 .stu-rounded,
+.stu-template-7 .stu-rounded,
+.stu-template-10 .stu-rounded,
+.stu-template-11 .stu-rounded,
+.stu-template-12 .stu-rounded,
+.stu-template-13 .stu-rounded,
+.stu-template-15 .stu-rounded,
+.stu-template-18 .stu-rounded,
+.stu-template-19 .stu-rounded,
+.stu-template-20 .stu-rounded,
+.stu-template-21 .stu-rounded,
+.stu-template-22 .stu-rounded {
+  border-radius: 0px !important;
+}
+.stu-template-6 .stu-checkbox-value,
+.stu-template-8 .stu-checkbox-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-basis: 300px;
+  line-height: 25px;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="text"],
+.stu-form-wrap.stu-template-7 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="tel"],
+.stu-form-wrap.stu-template-7 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-custom-field-wrap.stu-select-text {
+  background-color: transparent;
+  color: inherit;
+  border-bottom-color: #32a6ff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  select.stu-select-option.stu-rounded {
+  border: 1px solid grey !important;
+}
+.stu-custom-field-wrap.stu-select-text {
+  display: flex;
+  align-items: center;
+}
+
+.stu-template-19 select.stu-select-option {
+  height: 48px;
+}
+.stu-form-with-custom-fields .stu-checkbox-main {
+  display: flex;
+  align-items: center;
+}
+.stu-form-with-custom-fields input.stu-name::placeholder,
+input.stu-email::placeholder {
+  text-align: left;
+}
+.stu-form-with-custom-fields .stu-checkbox-wrap,
+select.stu-select-option {
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+option.stu-select-option {
+  background: transparent;
+  font-size: 1em;
+}
+.stu-radio-value {
+  display: flex;
+  margin-left: 7px;
+}
+.stu-radio-main label {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+span.stu-gdpr-text a {
+  color: inherit;
+}
+
+.stu-form-wrap.stu-form-with-custom-fields.stu-template-15 .stu-form-submit {
+  background-color: #22c6a9;
+  color: white;
+  width: auto;
+}
+.stu-form-wrap.stu-form-with-custom-fields.stu-template-16 .stu-form-submit {
+  background-color: #e9b740;
+  color: white;
+  width: auto;
+  margin-top: 5px;
+  margin-left: 18px;
+}
+.stu-form-wrap.stu-form-with-custom-fields.stu-template-21 .stu-form-submit {
+  width: auto;
+}
+.stu-form-wrap.stu-form-with-custom-fields.stu-template-4 .stu-form-submit {
+  width: auto;
+  margin-top: 5px;
+}
+.stu-form-with-custom-fields .stu-template-4 option.stu-select-option {
+  background: #ce5f5f;
+}
+.stu-form-with-custom-fields .stu-template-5 option.stu-select-option {
+  background: #3d3e40;
+}
+.stu-form-with-custom-fields .stu-template-6 option.stu-select-option {
+  background: #607578;
+}
+.stu-form-with-custom-fields .stu-template-7 option.stu-select-option {
+  background: #1f4e68;
+}
+.stu-form-with-custom-fields .stu-template-8 option.stu-select-option {
+  background: #bd6e6e;
+}
+.stu-form-with-custom-fields .stu-template-11 option.stu-select-option {
+  background: #5c5e5e;
+}
+.stu-form-with-custom-fields .stu-template-13 option.stu-select-option {
+  background: #5c5e5e;
+}
+.stu-form-with-custom-fields .stu-template-14 option.stu-select-option {
+  background: #f3f5f6;
+}
+.stu-form-with-custom-fields .stu-template-15 option.stu-select-option {
+  background: #010102;
+}
+.stu-form-with-custom-fields .stu-template-16 option.stu-select-option {
+  background: #5796ec;
+}
+
+.stu-form-with-custom-fields .stu-form-wrap .both-fields-wrap {
+  margin-bottom: 0px;
+}
+.stu-custom-field-wrap.stu-text-area {
+  margin-bottom: 5px;
+}
+select.stu-select-option.stu-rounded {
+  height: auto;
+  font-family: inherit;
+}
+
+/* .stu-popup-wrapper .stu-form-with-custom-fields .stu-form-wrap.stu-template-5,
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-form-wrap.stu-template-14,
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-form-wrap.stu-template-16,
+.stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-5,
+.stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-14,
+.stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 {
+  position: unset;
+} */
+/* .stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 .stu-subscription-form,
+.stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-14 .stu-subscription-form,
+.stu-content-locked.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 .stu-subscription-form */
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-subscription-form,
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  .stu-subscription-form,
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  .stu-subscription-form {
+  height: auto;
+  overflow-y: hidden;
+}
+
+/* Scrollbar CSS For Pop-up form */
+
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-subscription-form {
+  height: 550px;
+  overflow-y: scroll;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-subscription-form {
+  height: 418px;
+  overflow-y: scroll;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-subscription-form::-webkit-scrollbar {
+  width: 5px;
+}
+
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-5
+  .stu-subscription-form::-webkit-scrollbar-thumb,
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-14
+  .stu-subscription-form::-webkit-scrollbar-thumb,
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-16
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Handle */
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(160, 160, 160);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*for specific template*/
+
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-template-5,
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-template-14,
+.stu-popup-wrapper .stu-form-with-custom-fields .stu-template-16 {
+  height: 500px;
+  overflow-y: scroll;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-5::-webkit-scrollbar,
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-14::-webkit-scrollbar,
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-16::-webkit-scrollbar {
+  width: 5px;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-4
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(213, 83, 83);
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-5::-webkit-scrollbar-thumb {
+  background: #747475;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-6
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #48828b;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-7
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #3f677d;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-8
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(213, 83, 83);
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-14::-webkit-scrollbar-thumb {
+  background: rgb(141, 139, 139);
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-15
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #4e5d82;
+}
+.stu-popup-wrapper
+  .stu-form-with-custom-fields
+  .stu-template-16::-webkit-scrollbar-thumb {
+  background: #2278e7;
+}
+.stu-label {
+  width: 30%;
+  text-align: left;
+  height: auto;
+  opacity: 0.68;
+}
+
+/* Pop-up Scrollbar css End*/
+
+/* Direct Display Scrollbar CSS */
+
+.stu-content-locked.stu-form-with-custom-fields {
+  position: relative;
+  max-height: 100%;
+  min-height: 850px;
+  /* overflow: hidden; */
+}
+.stu-content-locked.stu-form-with-custom-fields .stu-subscription-form {
+  max-height: 680px;
+  overflow-y: scroll;
+}
+
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(160, 160, 160);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-subscription-form::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*for specific template*/
+
+/* .stu-content-locked.stu-form-with-custom-fields .stu-template-5,
+.stu-content-locked.stu-form-with-custom-fields .stu-template-14,
+.stu-content-locked.stu-form-with-custom-fields .stu-template-16{
+  height: 500px;
+  overflow-y: scroll;
+} */
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-5::-webkit-scrollbar,
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-14::-webkit-scrollbar,
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-16::-webkit-scrollbar {
+  width: 5px;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-4
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(213, 83, 83);
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-5::-webkit-scrollbar-thumb {
+  background: #747475;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-6
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #48828b;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-7
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #3f677d;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-8
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: rgb(213, 83, 83);
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-9
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-14::-webkit-scrollbar-thumb {
+  background: rgb(141, 139, 139);
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-15
+  .stu-subscription-form::-webkit-scrollbar-thumb {
+  background: #4e5d82;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-template-16::-webkit-scrollbar-thumb {
+  background: #2278e7;
+}
+
+/* Scrollbar css End*/
+
+.stu-submit-btn {
+  display: none;
+}
+.top-lines {
+  position: fixed;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  select.stu-select-option {
+  background-color: transparent;
+  border: solid 2px white;
+  text-align: center;
+}
+
+.stu-field-wrap {
+  margin-bottom: 5px;
+}
+
+.stu-form-wrap.stu-template-1 ::-webkit-input-placeholder,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-1
+  input[type="number"]::-webkit-input-placeholder,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-1
+  input[type="url"]::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-1 input[type="text"]::-webkit-input-placeholder,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-13
+  input[type="url"]::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-13 ::-webkit-input-placeholder {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Custom field*/
+  .stu-form-with-custom-fields select.stu-select-option {
+    width: 200px;
+  }
+  .stu-form-with-custom-fields
+    .stu-form-wrap.stu-template-8
+    select.stu-select-option,
+  .stu-form-with-custom-fields
+    .stu-form-wrap.stu-template-9
+    select.stu-select-option {
+    width: 150px;
+  }
+  /* .stu-content-locked.stu-form-with-custom-fields .stu-subscription-form{
+  height: auto;
+} */
+  .stu-content-locked.stu-form-with-custom-fields
+    .stu-form-wrap.stu-template-6
+    .stu-subscription-form::-webkit-scrollbar {
+    width: 0px !important;
+  }
+  .stu-form-with-custom-fields select.stu-select-option {
+    width: 175px;
+  }
+  .stu-popup-wrapper
+    .stu-form-with-custom-fields
+    .stu-subscription-form::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+  }
+  .stu-popup-wrapper
+    .stu-form-with-custom-fields
+    .stu-template-15
+    .stu-subscription-form::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  .stu-template-4 .stu-captcha-field {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.stu-form-wrap.stu-template-1 ::-webkit-input-placeholder,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-1
+  input[type="number"]::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-1 input[type="text"]::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-13 ::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-13 ::-webkit-input-placeholder,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-form-wrap.stu-template-13
+  input[type="number"]::-webkit-input-placeholder,
+.stu-form-wrap.stu-template-13 input[type="text"]::-webkit-input-placeholder {
+  text-align: center;
+}
+
+/* .stu-label {
+  opacity: 0.68;
+  color: #000000;
+} */
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 .stu-label,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-13 .stu-label {
+  margin-bottom: 5px;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-10
+  .both-fields-wrap
+  .stu-name,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-20
+  .both-fields-wrap
+  .stu-name {
+  margin-bottom: 0px;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-1 .stu-label,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-13 .stu-label {
+  text-align: center;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-1
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  select.stu-select-option {
+  margin-left: 0px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  select.stu-select-option {
+  width: 168px;
+  background-color: #e6e0e0;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="text"],
+.stu-form-wrap.stu-template-7 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 input[type="tel"],
+.stu-form-wrap.stu-template-7 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 input[type="text"],
+.stu-form-wrap.stu-template-12 input[type="email"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-field-wrap
+  input[type="text"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  input[type="number"],
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 input[type="tel"],
+.stu-form-wrap.stu-template-12 input[type="url"],
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  textarea.stu-txt-area,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  select.stu-select-option,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-each-custom-field.stu-checkbox-wrap,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-custom-field-wrap.stu-select-text,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-custom-field-wrap.stu-select-text {
+  padding-left: 0px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  select.stu-select-option {
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  padding-left: 5px;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .form-contents-wrap
+  .white-bg {
+  background-size: 100% 100%;
+  width: 46%;
+}
+
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-4 .stu-checkbox-main,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-8 .stu-checkbox-main,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 .stu-checkbox-main,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 .stu-checkbox-main,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-15 .stu-checkbox-main {
+  width: 108px;
+}
+
+.stu-select {
+  position: relative;
+  appearance: none;
+}
+.stu-select::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 11px;
+  color: inherit;
+  right: 13px;
+  background: url("../images/dropdownn.svg");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+select.stu-select-option {
+  appearance: none;
+  background: inherit;
+}
+
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 .top-lines,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-14 .top-lines,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 .top-lines {
+  display: none;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-3 .stu-label,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-4 .stu-label,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 .stu-label {
+  width: 30%;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-each-custom-field.stu-checkbox-wrap.stu-rounded,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-9
+  .stu-custom-field-wrap.stu-select-text {
+  border-radius: 27px !important;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  select.stu-select-option {
+  margin-left: 13px;
+}
+select.stu-select-option.stu-rounded {
+  padding-right: 35px;
+  padding-left: 15px;
+}
+.stu-form-with-custom-fields
+  .stu-each-custom-field.stu-checkbox-wrap
+  input[type="radio"]:after {
+  content: "";
+  display: block;
+  left: 2px;
+  top: 2px;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--form--color-text);
+}
+
+.stu-error-highlight {
+  box-shadow: 0 0 3px #d8000c !important;
+  /* box-shadow: 0 3px 2px -2px #9f1f1f !important; */
+}
+
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 .stu-error-highlight,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-12
+  .stu-error-highlight {
+  box-shadow: 0 3px 2px -2px #d8000c !important;
+  border-bottom-color: transparent !important;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-13
+  .stu-error-highlight {
+  box-shadow: 0 0 6px #d8000c !important;
+  border-color: transparent !important;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-9 .stu-error-highlight,
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-8
+  .stu-error-highlight {
+  border: 2px solid #d8000c;
+  box-shadow: 2px 2px 4px #d8000c;
+}
+.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+  z-index: 99999 !important;
+}
+
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-7
+  select.stu-select-option.stu-rounded {
+  padding-left: 10px;
+  background: #41728e;
+}
+.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-6
+  .stu-field-wrap.stu-terms-agreement-wrap.stu-check-box-text {
+  margin-bottom: 10px;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 .stu-form-submit {
+  border-radius: 50px;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 .stu-btn-parent {
+  margin: auto;
+}
+.stu-form-wrap.stu-template-10 span.stu-form-loader-wraper {
+  /* bottom: 0; */
+  color: black;
+  font-size: 30px;
+}
+
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-2 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-5 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-7 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-11 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-12 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-14 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-16 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-17 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-19 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-20 .stu-form-loader-1 {
+  bottom: 25px;
+}
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-6 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-10 .stu-form-loader-1,
+.stu-form-with-custom-fields .stu-form-wrap.stu-template-20 .stu-form-loader-1 {
+  left: 18px;
+}
+.stu-content-locked.stu-form-with-custom-fields
+  .stu-form-wrap.stu-template-11
+  .stu-subscription-form {
+  overflow-x: hidden;
+}
+.stu-content-locked.stu-form-with-custom-fields label {
+  color: inherit;
+  display: unset;
+  font-weight: inherit;
+  margin-bottom: flex;
+}
+.stu-field-wrap.stu-captcha-field label {
+  display: none;
+}
+
+.stu-captcha-field {
+  margin-bottom: 20px;
+  width: max-content;
+}
+
+.stu-template-1 .stu-captcha-field,
+.stu-template-2 .stu-captcha-field,
+.stu-template-5 .stu-captcha-field,
+.stu-template-12 .stu-captcha-field,
+.stu-template-13 .stu-captcha-field,
+.stu-template-14 .stu-captcha-field,
+.stu-template-16 .stu-captcha-field,
+.stu-template-18 .stu-captcha-field,
+.stu-template-3 .stu-captcha-field,
+.stu-template-11 .stu-captcha-field,
+.stu-template-17 .stu-captcha-field,
+.stu-template-7 .stu-captcha-field,
+.stu-template-9 .stu-captcha-field,
+.stu-template-19 .stu-captcha-field {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stu-form-with-custom-fields .stu-radio-main label {
+  display: flex;
+  align-items: center;
+}
+.stu-form-wrap.stu-template-19 .stu-btn-parent {
+  max-width: 200px;
+  margin: auto;
+}
+.stu-form-with-custom-fields
+  .stu-field-wrap.stu-terms-agreement-wrap.stu-check-box-text {
+  margin-top: 20px;
+}
+.stu-confirmation-message-wrap {
+  background: #fff;
+  padding: 40px;
+  min-height: 300px;
+  margin: 50px;
+}

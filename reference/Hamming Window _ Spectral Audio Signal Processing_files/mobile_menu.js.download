@@ -1,0 +1,30 @@
+$(document).ready(function() {
+
+  $("#mobilenav").on("click", function(){
+//  $('.replybutton').click(function(){
+
+        $("#menulist").slideToggle();
+
+  });
+
+
+    $('.register_tab a').on('click', function (e) {
+
+      e.preventDefault();
+
+      $(this).parent().addClass('active');
+      $(this).parent().siblings().removeClass('active');
+
+      target = $(this).attr('href');
+
+      $('.register_tab_content > div').not(target).hide();
+
+      $(target).fadeIn(600);
+
+    });
+
+
+
+
+});
+
