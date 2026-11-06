@@ -1,6 +1,7 @@
 [main/direct] PASS: 1002 dong so sanh, 0 dong lech, max|loi| = 0 LSB, cham +32767: 0 lan, cham -32768: 0 lan
 [main/converted] PASS: 1002 dong so sanh, 0 dong lech, max|loi| = 0 LSB, cham +32767: 0 lan, cham -32768: 0 lan
-[sat/direct] SKIP (chua co fir_out_sat_direct.txt, hay chay mo phong test "sat")
-[sat/converted] SKIP (chua co fir_out_sat_converted.txt, hay chay mo phong test "sat")
+[sat/direct] PASS: 1002 dong so sanh, 0 dong lech, max|loi| = 0 LSB, cham +32767: 13 lan, cham -32768: 14 lan
+[sat/converted] PASS: 1002 dong so sanh, 0 dong lech, max|loi| = 0 LSB, cham +32767: 8 lan, cham -32768: 10 lan
 [main] Direct vs Converted: RMS lech = 178.29 LSB, max lech = 256 LSB (do DC gain cua bo LP goc = 0.98)
+[sat] Direct vs Converted: RMS lech = 246.85 LSB, max lech = 638 LSB (do DC gain cua bo LP goc = 0.98)
 TONG KET: ALL PASS
