@@ -452,6 +452,5 @@ Apply a unit impulse (`x_in = 32767` for one sample, then 0): the output must eq
 
 ## 15. Authors and license
 
-- **Author:** _[Full name] – [Student ID] – [Class]_
-- **Supervisor:** _[Full name]_
-- **License:** _[Not chosen yet – add a `LICENSE` file if you want to make the repository public]_
+- **Author:** SE201733 Huynh Thien Vu, SE204273 Hoang Minh Nhat
+- **Supervisor:** ThS. Pham The Vinh
